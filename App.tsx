@@ -4,7 +4,8 @@ import { StyleSheet, Text, SafeAreaView } from 'react-native';
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello Dinx!</Text>
+      <Text>Dinx!</Text>
+      <Text>New first mobile app!</Text>
     </SafeAreaView>
   );
 }
