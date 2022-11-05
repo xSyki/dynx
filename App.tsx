@@ -1,13 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, AppRegistry } from 'react-native';
+import GameMode from './src/Components/GameMode/GameMode';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import Eve from './src/Components/Eve/Eve';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text>Dinx!</Text>
-      <Text>New first mobile app!</Text>
-    </SafeAreaView>
-  );
+  return <GameMode />;
 }
 
 const styles = StyleSheet.create({
