@@ -13,14 +13,21 @@ export enum GameModeEnum {
   TEAMS = 'TEAMS',
 }
 
+export interface IPlayer {
+  id: string
+  name: string
+}
+
 interface IGameState {
   gameStatus: GameStatusEnum
   gameMode: undefined | GameModeEnum
+  players: undefined | IPlayer[]
 }
 
 const gameInitialState: IGameState = {
   gameStatus: GameStatusEnum.GAME_MODE,
   gameMode: undefined,
+  players: undefined,
 }
 
 const gameActions = {
@@ -33,6 +40,11 @@ const gameActions = {
     (gameMode: GameModeEnum | undefined): Action<IGameState> =>
     ({ setState }) => {
       setState({ gameMode })
+    },
+  setPlayers:
+    (players: IPlayer[]): Action<IGameState> =>
+    ({ setState }) => {
+      setState({ players })
     },
 }
 
