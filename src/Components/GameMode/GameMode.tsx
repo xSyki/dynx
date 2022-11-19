@@ -1,16 +1,10 @@
-import { Link } from '@react-navigation/native';
-import { useState } from 'react';
-import { StyleSheet, Text, SafeAreaView, Button } from 'react-native';
+import { StyleSheet, SafeAreaView, Button } from 'react-native';
+import { EnumGameMode, useGameStore } from '../../stores/gameStore';
 import Eve from '../Eve/Eve';
 import Teams from '../Teams/Teams';
 
-enum EnumGameMode {
-  EVE = 'EVE',
-  TEAMS = 'TEAMS',
-}
-
 export default function GameMode() {
-  const [gameMode, setGameMode] = useState<EnumGameMode>();
+  const [{ gameMode }, { setGameMode }] = useGameStore();
 
   return (
     <SafeAreaView style={styles.container}>

@@ -1,9 +1,12 @@
-import { Link } from '@react-navigation/native';
-import { StyleSheet, Text, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, Button } from 'react-native';
+import { useGameStore } from '../../stores/gameStore';
 
 export default function Eve() {
+  const [, { setGameMode }] = useGameStore();
+
   return (
     <SafeAreaView style={styles.container}>
+      <Button title="Back" onPress={() => setGameMode(undefined)} />
       <SafeAreaView>
         <Text>EVE</Text>
       </SafeAreaView>
