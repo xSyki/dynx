@@ -1,7 +1,7 @@
-import Game from './src/Components/Game/Game'
+import GameRouter from './src/Components/GameRouter/GameRouter'
 
 function App() {
-  return <Game />
+  return <GameRouter />
 }
 
 export default App

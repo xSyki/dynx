@@ -3,6 +3,9 @@ import { Action, createHook, createStore } from 'react-sweet-state'
 export enum GameStatusEnum {
   'GAME_MODE' = 'game_mode',
   'PLAYERS' = 'players',
+  'SETTINGS' = 'settings',
+  'CATEGORY' = 'category',
+  'GAME' = 'game',
 }
 
 export enum GameModeEnum {
