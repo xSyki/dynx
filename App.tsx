@@ -1,20 +1,7 @@
-import { StyleSheet, Text, SafeAreaView, AppRegistry } from 'react-native';
-import GameMode from './src/Components/GameMode/GameMode';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { NavigationContainer } from '@react-navigation/native';
-import Eve from './src/Components/Eve/Eve';
+import Game from './src/Components/Game/Game'
 
-const Stack = createNativeStackNavigator();
-
-export default function App() {
-  return <GameMode />;
+function App() {
+  return <Game />
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App

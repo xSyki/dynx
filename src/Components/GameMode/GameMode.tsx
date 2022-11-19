@@ -1,26 +1,29 @@
 import { Button, SafeAreaView, StyleSheet } from 'react-native'
 
-import { EnumGameMode, useGameStore } from '../../stores/gameStore'
-import Eve from '../Eve/Eve'
-import Teams from '../Teams/Teams'
+import {
+  GameModeEnum,
+  GameStatusEnum,
+  useGameStore,
+} from '../../stores/gameStore'
 
 export default function GameMode() {
-  const [{ gameMode }, { setGameMode }] = useGameStore()
+  const [, { setGameMode, setGameStatus }] = useGameStore()
+
+  const handleSetGameMode = (gameMode: GameModeEnum) => {
+    setGameMode(gameMode)
+    setGameStatus(GameStatusEnum.PLAYERS)
+  }
 
   return (
     <SafeAreaView style={styles.container}>
-      {!gameMode && (
-        <SafeAreaView>
-          <Button onPress={() => setGameMode(EnumGameMode.EVE)} title="1vs1" />
-          <Button
-            onPress={() => setGameMode(EnumGameMode.TEAMS)}
-            title="Teams"
-          />
-        </SafeAreaView>
-      )}
-
-      {gameMode === EnumGameMode.EVE && <Eve />}
-      {gameMode === EnumGameMode.TEAMS && <Teams />}
+      <Button
+        onPress={() => handleSetGameMode(GameModeEnum.EVE)}
+        title="1vs1"
+      />
+      <Button
+        onPress={() => handleSetGameMode(GameModeEnum.TEAMS)}
+        title="Teams"
+      />
     </SafeAreaView>
   )
 }
