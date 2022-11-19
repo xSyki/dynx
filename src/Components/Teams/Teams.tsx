@@ -1,8 +1,9 @@
-import { Button, SafeAreaView, Text } from 'react-native';
-import { useGameStore } from '../../stores/gameStore';
+import { Button, SafeAreaView, Text } from 'react-native'
+
+import { useGameStore } from '../../stores/gameStore'
 
 function Teams() {
-  const [, { setGameMode }] = useGameStore();
+  const [, { setGameMode }] = useGameStore()
 
   return (
     <SafeAreaView>
@@ -11,7 +12,7 @@ function Teams() {
         <Text>TEAMS</Text>
       </SafeAreaView>
     </SafeAreaView>
-  );
+  )
 }
 
-export default Teams;
+export default Teams

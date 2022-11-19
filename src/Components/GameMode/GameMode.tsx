@@ -1,10 +1,11 @@
-import { StyleSheet, SafeAreaView, Button } from 'react-native';
-import { EnumGameMode, useGameStore } from '../../stores/gameStore';
-import Eve from '../Eve/Eve';
-import Teams from '../Teams/Teams';
+import { Button, SafeAreaView, StyleSheet } from 'react-native'
+
+import { EnumGameMode, useGameStore } from '../../stores/gameStore'
+import Eve from '../Eve/Eve'
+import Teams from '../Teams/Teams'
 
 export default function GameMode() {
-  const [{ gameMode }, { setGameMode }] = useGameStore();
+  const [{ gameMode }, { setGameMode }] = useGameStore()
 
   return (
     <SafeAreaView style={styles.container}>
@@ -21,7 +22,7 @@ export default function GameMode() {
       {gameMode === EnumGameMode.EVE && <Eve />}
       {gameMode === EnumGameMode.TEAMS && <Teams />}
     </SafeAreaView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -31,4 +32,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})

@@ -1,4 +1,4 @@
-import { Action, createHook, createStore } from 'react-sweet-state';
+import { Action, createHook, createStore } from 'react-sweet-state'
 
 export enum EnumGameMode {
   EVE = 'EVE',
@@ -6,24 +6,24 @@ export enum EnumGameMode {
 }
 
 interface IGameState {
-  gameMode: undefined | EnumGameMode;
+  gameMode: undefined | EnumGameMode
 }
 
 const gameInitialState: IGameState = {
   gameMode: undefined,
-};
+}
 
 const gameActions = {
   setGameMode:
     (gameMode: EnumGameMode | undefined): Action<IGameState> =>
     ({ setState }) => {
-      setState({ gameMode });
+      setState({ gameMode })
     },
-};
+}
 
 const Store = createStore({
   initialState: gameInitialState,
   actions: gameActions,
-});
+})
 
-export const useGameStore = createHook(Store);
+export const useGameStore = createHook(Store)

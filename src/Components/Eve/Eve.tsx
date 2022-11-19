@@ -1,8 +1,9 @@
-import { StyleSheet, Text, SafeAreaView, Button } from 'react-native';
-import { useGameStore } from '../../stores/gameStore';
+import { Button, SafeAreaView, StyleSheet, Text } from 'react-native'
+
+import { useGameStore } from '../../stores/gameStore'
 
 export default function Eve() {
-  const [, { setGameMode }] = useGameStore();
+  const [, { setGameMode }] = useGameStore()
 
   return (
     <SafeAreaView style={styles.container}>
@@ -11,7 +12,7 @@ export default function Eve() {
         <Text>EVE</Text>
       </SafeAreaView>
     </SafeAreaView>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -21,4 +22,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})

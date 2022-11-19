@@ -1,1 +1,1 @@
-const wordList = {};
+const wordList = {}
