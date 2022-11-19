@@ -2,8 +2,10 @@ import { SafeAreaView, Text } from 'react-native'
 
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
 import Category from '../Category/Category'
+import Game from '../Game/Game'
 import GameMode from '../GameMode/GameMode'
 import Players from '../Players/Players'
+import Settings from '../Settings/Settings'
 
 function GameRouter() {
   const [{ gameStatus }] = useGameStore()
@@ -16,6 +18,10 @@ function GameRouter() {
         return <Players />
       case GameStatusEnum.CATEGORY:
         return <Category />
+      case GameStatusEnum.SETTINGS:
+        return <Settings />
+      case GameStatusEnum.GAME:
+        return <Game />
       default:
         return (
           <SafeAreaView>

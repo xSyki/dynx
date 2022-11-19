@@ -2,24 +2,24 @@ import { Button, SafeAreaView, Text } from 'react-native'
 
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
 
-function Category() {
+function Settings() {
   const [, { setGameStatus }] = useGameStore()
 
   const handleBack = () => {
-    setGameStatus(GameStatusEnum.PLAYERS)
+    setGameStatus(GameStatusEnum.CATEGORY)
   }
 
   const handleSubmit = () => {
-    setGameStatus(GameStatusEnum.SETTINGS)
+    setGameStatus(GameStatusEnum.GAME)
   }
 
   return (
     <SafeAreaView>
       <Button onPress={handleBack} title="Back" />
-      <Text>Categories</Text>
+      <Text>Settings</Text>
       <Button title="Submit" onPress={handleSubmit} />
     </SafeAreaView>
   )
 }
 
-export default Category
+export default Settings
