@@ -18,16 +18,35 @@ export interface IPlayer {
   name: string
 }
 
+export interface ICategory {
+  id: string
+  name: string
+  image: string
+  file: string
+}
+
+export interface ISettings {
+  timer: boolean
+  rounds: number
+}
+
 interface IGameState {
   gameStatus: GameStatusEnum
   gameMode: undefined | GameModeEnum
-  players: undefined | IPlayer[]
+  players: IPlayer[]
+  category: undefined | ICategory
+  settings: ISettings
 }
 
 const gameInitialState: IGameState = {
   gameStatus: GameStatusEnum.GAME_MODE,
   gameMode: undefined,
-  players: undefined,
+  players: [],
+  category: undefined,
+  settings: {
+    timer: false,
+    rounds: 2,
+  },
 }
 
 const gameActions = {
@@ -45,6 +64,11 @@ const gameActions = {
     (players: IPlayer[]): Action<IGameState> =>
     ({ setState }) => {
       setState({ players })
+    },
+  setCategory:
+    (category: ICategory): Action<IGameState> =>
+    ({ setState }) => {
+      setState({ category })
     },
 }
 

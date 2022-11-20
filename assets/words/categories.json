@@ -1,0 +1,14 @@
+[
+  {
+    "id": "0",
+    "name": "family",
+    "image": "family.png",
+    "file": "family.json"
+  },
+  {
+    "id": "1",
+    "name": "party",
+    "image": "party.png",
+    "file": "party.json"
+  }
+]

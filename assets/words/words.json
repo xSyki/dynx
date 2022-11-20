@@ -1,0 +1,32 @@
+[
+  {
+    "word": "car",
+    "id": "0",
+    "categories": ["0"]
+  },
+  {
+    "word": "city",
+    "id": "1",
+    "categories": ["0"]
+  },
+  {
+    "word": "person",
+    "id": "2",
+    "categories": ["0"]
+  },
+  {
+    "word": "vodka",
+    "id": "3",
+    "categories": ["1"]
+  },
+  {
+    "word": "drink",
+    "id": "4",
+    "categories": ["1"]
+  },
+  {
+    "word": "porn star",
+    "id": "5",
+    "categories": ["1"]
+  }
+]
