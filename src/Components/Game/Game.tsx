@@ -3,6 +3,7 @@ import { Button, SafeAreaView } from 'react-native'
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
 import { GameStageEnum, useRoundStore } from '../../stores/roundStore'
 
+import End from './End/End'
 import Players from './Players/Players'
 import Result from './Result/Result'
 import Start from './Start/Start'
@@ -25,6 +26,7 @@ function Game() {
       {gameStage === GameStageEnum.WORD && <Word />}
       {gameStage === GameStageEnum.TIMER && <Timer />}
       {gameStage === GameStageEnum.RESULT && <Result />}
+      {gameStage === GameStageEnum.END && <End />}
     </SafeAreaView>
   )
 }

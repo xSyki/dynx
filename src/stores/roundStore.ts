@@ -8,11 +8,13 @@ export enum GameStageEnum {
   'WORD' = 'word',
   'TIMER' = 'timer',
   'RESULT' = 'RESULT',
+  'END' = 'end',
 }
 
 export interface IRound {
   players: [IPlayer] | [IPlayer, IPlayer]
   word: IWord
+  result: number
 }
 
 export interface IWord {
@@ -24,13 +26,13 @@ export interface IWord {
 interface IGameState {
   gameStage: GameStageEnum
   rounds: IRound[]
-  round: number
+  roundNumber: number
 }
 
 const gameInitialState: IGameState = {
   gameStage: GameStageEnum.START,
   rounds: [],
-  round: 0,
+  roundNumber: 0,
 }
 
 const gameActions = {
@@ -39,10 +41,24 @@ const gameActions = {
     ({ setState }) => {
       setState({ rounds })
     },
+  increaseRoundNumber:
+    (): Action<IGameState> =>
+    ({ setState, getState }) => {
+      setState({ roundNumber: getState().roundNumber + 1 })
+    },
   setGameStage:
     (gameStage: GameStageEnum): Action<IGameState> =>
     ({ setState }) => {
       setState({ gameStage })
+    },
+  changeRoundResult:
+    (): Action<IGameState> =>
+    ({ setState, getState }) => {
+      const rounds = JSON.parse(JSON.stringify(getState().rounds)) as IRound[]
+
+      rounds[getState().roundNumber].result = 1
+
+      setState({ rounds })
     },
 }
 
