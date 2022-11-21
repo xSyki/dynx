@@ -1,11 +1,17 @@
-import { Button, SafeAreaView, Text } from 'react-native'
+import { Button, SafeAreaView } from 'react-native'
 
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
-import { useRoundStore } from '../../stores/roundStore'
+import { GameStageEnum, useRoundStore } from '../../stores/roundStore'
+
+import Players from './Players/Players'
+import Result from './Result/Result'
+import Start from './Start/Start'
+import Timer from './Timer/Timer'
+import Word from './Word/Word'
 
 function Game() {
   const [, { setGameStatus }] = useGameStore()
-  const [{ rounds }] = useRoundStore()
+  const [{ gameStage }] = useRoundStore()
 
   const handleBack = () => {
     setGameStatus(GameStatusEnum.CATEGORY)
@@ -14,10 +20,11 @@ function Game() {
   return (
     <SafeAreaView>
       <Button onPress={handleBack} title="Back" />
-      <Text>Game</Text>
-      <Text>
-        <Text>{JSON.stringify(rounds)}</Text>
-      </Text>
+      {gameStage === GameStageEnum.START && <Start />}
+      {gameStage === GameStageEnum.PLAYERS && <Players />}
+      {gameStage === GameStageEnum.WORD && <Word />}
+      {gameStage === GameStageEnum.TIMER && <Timer />}
+      {gameStage === GameStageEnum.RESULT && <Result />}
     </SafeAreaView>
   )
 }
