@@ -9,7 +9,7 @@ function Players() {
 
   return (
     <SafeAreaView>
-      <Text>{round.players.join(' - ')}</Text>
+      <Text>{round.players.map((player) => player.name).join(' - ')}</Text>
       <Button title="Start" onPress={() => setGameStage(GameStageEnum.WORD)} />
     </SafeAreaView>
   )

@@ -9,8 +9,10 @@ import getRandomWords from '../../utils/getRandomWords'
 import getRounds from '../../utils/getRounds'
 
 function Settings() {
-  const [{ settings, category, players, gameMode }, { setGameStatus }] =
-    useGameStore()
+  const [
+    { settings, category, players, gameMode },
+    { setGameStatus, setSettings },
+  ] = useGameStore()
   const [, { setRounds }] = useRoundStore()
   const [numberRounds, setNumberRounds] = useState(settings.rounds)
   const [timer, setTimer] = useState(settings.timer)
@@ -30,9 +32,9 @@ function Settings() {
     )
 
     const rounds = getRounds(players, words, gameMode, numberRounds)
-
     setRounds(rounds)
 
+    setSettings({ timer, rounds: numberRounds })
     setGameStatus(GameStatusEnum.GAME)
   }
 

@@ -9,7 +9,7 @@ function Result() {
   ] = useRoundStore()
 
   const endRound = () => {
-    if (rounds.length === roundNumber) {
+    if (rounds.length - 1 === roundNumber) {
       setGameStage(GameStageEnum.END)
       return
     }

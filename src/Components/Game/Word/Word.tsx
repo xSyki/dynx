@@ -2,6 +2,7 @@ import { Button, SafeAreaView, Text } from 'react-native'
 
 import { useGameStore } from '../../../stores/gameStore'
 import { GameStageEnum, useRoundStore } from '../../../stores/roundStore'
+import Timer from '../Timer/Timer'
 
 function Word() {
   const [{ settings }] = useGameStore()
@@ -12,7 +13,9 @@ function Word() {
   return (
     <SafeAreaView>
       <Text>{round.word.word}</Text>
-      {!settings.timer && (
+      {settings.timer ? (
+        <Timer />
+      ) : (
         <Button
           title="Results"
           onPress={() => setGameStage(GameStageEnum.RESULT)}

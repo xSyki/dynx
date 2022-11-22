@@ -1,6 +1,10 @@
-import { SafeAreaView, Text } from 'react-native'
+import { Button, SafeAreaView, Text } from 'react-native'
 
-import { IPlayer, useGameStore } from '../../../stores/gameStore'
+import {
+  GameStatusEnum,
+  IPlayer,
+  useGameStore,
+} from '../../../stores/gameStore'
 import { useRoundStore } from '../../../stores/roundStore'
 
 interface IResult {
@@ -9,8 +13,8 @@ interface IResult {
 }
 
 function End() {
-  const [{ players }] = useGameStore()
-  const [{ rounds }] = useRoundStore()
+  const [{ players }, { setGameStatus }] = useGameStore()
+  const [{ rounds }, { resetGame }] = useRoundStore()
 
   const getPlaces = (): IResult[] => {
     return players
@@ -29,7 +33,17 @@ function End() {
           },
         ]
       }, [])
-      .sort((result, nextResult) => result.score - nextResult.score)
+      .sort((result, nextResult) => nextResult.score - result.score)
+  }
+
+  const handleStartNextGame = () => {
+    resetGame()
+    setGameStatus(GameStatusEnum.CATEGORY)
+  }
+
+  const handleExit = () => {
+    resetGame()
+    setGameStatus(GameStatusEnum.GAME_MODE)
   }
 
   return (
@@ -39,6 +53,8 @@ function End() {
           {result.player.name}: {result.score}
         </Text>
       ))}
+      <Button title="Start next game" onPress={handleStartNextGame} />
+      <Button title="Exit" onPress={handleExit} />
     </SafeAreaView>
   )
 }

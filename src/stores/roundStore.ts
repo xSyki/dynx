@@ -6,7 +6,6 @@ export enum GameStageEnum {
   'START' = 'start',
   'PLAYERS' = 'players',
   'WORD' = 'word',
-  'TIMER' = 'timer',
   'RESULT' = 'RESULT',
   'END' = 'end',
 }
@@ -59,6 +58,11 @@ const gameActions = {
       rounds[getState().roundNumber].result = 1
 
       setState({ rounds })
+    },
+  resetGame:
+    (): Action<IGameState> =>
+    ({ setState }) => {
+      setState({ gameStage: GameStageEnum.START, rounds: [], roundNumber: 0 })
     },
 }
 

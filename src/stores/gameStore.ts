@@ -70,6 +70,11 @@ const gameActions = {
     ({ setState }) => {
       setState({ category })
     },
+  setSettings:
+    (settings: ISettings): Action<IGameState> =>
+    ({ setState }) => {
+      setState({ settings })
+    },
 }
 
 const Store = createStore({
