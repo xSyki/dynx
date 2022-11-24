@@ -8,16 +8,16 @@ function SplashScreen() {
   return (
     <Wrapper>
       <Buttons>
-        <Text>TEST</Text>
-        <StyledButton title="Game" onPress={() => navigate(RouterEnum.GAME)} />
-        <StyledButton
-          title="Your words"
-          onPress={() => navigate(RouterEnum.GAME)}
-        />
-        <StyledButton
-          title="Rules"
-          onPress={() => navigate(RouterEnum.RULES)}
-        />
+        <Logo>DYNX</Logo>
+        <StyledButton onPress={() => navigate(RouterEnum.GAME)}>
+          <StyledText>Game</StyledText>
+        </StyledButton>
+        <StyledButton onPress={() => navigate(RouterEnum.GAME)}>
+          <StyledText>Your words</StyledText>
+        </StyledButton>
+        <StyledButton onPress={() => navigate(RouterEnum.RULES)}>
+          <StyledText>Rules</StyledText>
+        </StyledButton>
       </Buttons>
     </Wrapper>
   )
@@ -38,9 +38,29 @@ const Buttons = styled.SafeAreaView`
   gap: 20px;
 `
 
-const StyledButton = styled.Button`
-  fontfamily: LuckiestGuy;
+const StyledButton = styled.TouchableOpacity`
+  font-family: LuckiestGuy;
 `
-const Text = styled.Text`
-  fontfamily: LuckiestGuy;
+
+const StyledText = styled.Text`
+  font-family: LuckiestGuy;
+  font-size: 32px;
+  color: #fff;
+`
+
+const Logo = styled.Text`
+  font-family: LuckiestGuy;
+  font-size: 100px;
+  color: #fff;
+  text-shadow: 0 1px 0 #ccc;
+  text-shadow: 0 2px 0 #ccc;
+  text-shadow: 0 3px 0 #ccc;
+  text-shadow: 0 4px 0 #ccc;
+  text-shadow: 0 5px 0 #ccc;
+  text-shadow: 0 6px 0 transparent;
+  text-shadow: 0 7px 0 transparent;
+  text-shadow: 0 8px 0 transparent;
+  text-shadow: 0 9px 0 transparent;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+  padding: 20px;
 `

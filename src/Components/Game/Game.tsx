@@ -7,7 +7,6 @@ import End from './End/End'
 import Players from './Players/Players'
 import Result from './Result/Result'
 import Start from './Start/Start'
-import Timer from './Timer/Timer'
 import Word from './Word/Word'
 
 function Game() {
@@ -24,7 +23,6 @@ function Game() {
       {gameStage === GameStageEnum.START && <Start />}
       {gameStage === GameStageEnum.PLAYERS && <Players />}
       {gameStage === GameStageEnum.WORD && <Word />}
-      {gameStage === GameStageEnum.TIMER && <Timer />}
       {gameStage === GameStageEnum.RESULT && <Result />}
       {gameStage === GameStageEnum.END && <End />}
     </SafeAreaView>

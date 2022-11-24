@@ -1,22 +1,24 @@
 import { useCallback } from 'react'
-import { SafeAreaView, Text } from 'react-native'
+import { Button, Text } from 'react-native'
 import { useFonts } from 'expo-font'
 import * as ExpoSplashScreen from 'expo-splash-screen'
 import styled from 'styled-components/native'
 
 import GameRouter from './src/Components/GameRouter/GameRouter'
+import Rules from './src/Components/Rules/Rules'
 import SplashScreen from './src/Components/SplashScreen/SplashScreen'
 import { RouterEnum, useRouterStore } from './src/stores/routerStore'
 
 const AppWrapper = styled.SafeAreaView`
   font-family: LuckiestGuy;
   flex: 1;
+  background-color: skyblue;
 `
 
 ExpoSplashScreen.preventAutoHideAsync()
 
 function App() {
-  const [{ route }] = useRouterStore()
+  const [{ route }, { navigate }] = useRouterStore()
 
   const [fontsLoaded] = useFonts({
     LuckiestGuy: require('./assets/fonts/LuckiestGuy.otf'),
@@ -38,16 +40,23 @@ function App() {
         return <SplashScreen />
       case RouterEnum.GAME:
         return <GameRouter />
+      case RouterEnum.RULES:
+        return <Rules />
       default:
         return (
-          <SafeAreaView>
+          <AppWrapper>
             <Text>Error</Text>
-          </SafeAreaView>
+          </AppWrapper>
         )
     }
   }
 
-  return <AppWrapper onLayout={onLayoutRootView}>{redirect(route)}</AppWrapper>
+  return (
+    <AppWrapper onLayout={onLayoutRootView}>
+      <Button title="Back" onPress={() => navigate(RouterEnum.SPLASH_SCREEN)} />
+      {redirect(route)}
+    </AppWrapper>
+  )
 }
 
 export default App

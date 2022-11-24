@@ -31,7 +31,7 @@ function GameRouter() {
     }
   }
 
-  return renderGame(gameStatus)
+  return <SafeAreaView>{renderGame(gameStatus)}</SafeAreaView>
 }
 
 export default GameRouter
