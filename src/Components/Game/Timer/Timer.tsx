@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import { SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import { GameStageEnum, useRoundStore } from '../../../stores/roundStore'
+import StyledText from '../../Atoms/StyledText'
 
 function Timer() {
   const [, { setGameStage }] = useRoundStore()
@@ -28,7 +29,7 @@ function Timer() {
 
   return (
     <SafeAreaView>
-      <Text>{timeToDisplay ? timeToDisplay : 'GO'}</Text>
+      <StyledText>{timeToDisplay ? timeToDisplay : 'GO'}</StyledText>
     </SafeAreaView>
   )
 }

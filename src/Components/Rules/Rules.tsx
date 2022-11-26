@@ -1,9 +1,11 @@
-import { SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
+
+import StyledText from '../Atoms/StyledText'
 
 function Rules() {
   return (
     <SafeAreaView>
-      <Text>Rules</Text>
+      <StyledText>Rules</StyledText>
     </SafeAreaView>
   )
 }

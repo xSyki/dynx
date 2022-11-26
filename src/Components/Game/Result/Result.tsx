@@ -1,6 +1,7 @@
-import { Button, SafeAreaView } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import { GameStageEnum, useRoundStore } from '../../../stores/roundStore'
+import StyledButton from '../../Atoms/StyledButton'
 
 function Result() {
   const [
@@ -28,8 +29,8 @@ function Result() {
 
   return (
     <SafeAreaView>
-      <Button title="Lost" onPress={() => handlePlayersLost()} />
-      <Button title="Won" onPress={() => handlePlayersWon()} />
+      <StyledButton title="Lost" onPress={() => handlePlayersLost()} />
+      <StyledButton title="Won" onPress={() => handlePlayersWon()} />
     </SafeAreaView>
   )
 }

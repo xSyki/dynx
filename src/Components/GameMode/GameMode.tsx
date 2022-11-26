@@ -1,10 +1,11 @@
-import { Button, SafeAreaView, StyleSheet } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import {
   GameModeEnum,
   GameStatusEnum,
   useGameStore,
 } from '../../stores/gameStore'
+import StyledButton from '../Atoms/StyledButton'
 
 export default function GameMode() {
   const [, { setGameMode, setGameStatus }] = useGameStore()
@@ -15,24 +16,15 @@ export default function GameMode() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Button
+    <SafeAreaView>
+      <StyledButton
         onPress={() => handleSetGameMode(GameModeEnum.EVE)}
         title="1vs1"
       />
-      <Button
+      <StyledButton
         onPress={() => handleSetGameMode(GameModeEnum.TEAMS)}
         title="Teams"
       />
     </SafeAreaView>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-})

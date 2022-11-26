@@ -1,6 +1,7 @@
-import { Button, SafeAreaView } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
+import StyledButton from '../Atoms/StyledButton'
 
 import AddPlayers from './AddPlayers/AddPlayers'
 
@@ -13,7 +14,7 @@ function Players() {
 
   return (
     <SafeAreaView>
-      <Button onPress={handleBack} title="Back" />
+      <StyledButton onPress={handleBack} title="Back" />
       <AddPlayers />
     </SafeAreaView>
   )

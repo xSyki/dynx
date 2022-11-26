@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Button, SafeAreaView, Text, TextInput } from 'react-native'
+import { SafeAreaView, TextInput } from 'react-native'
 import { v4 as uuidv4 } from 'uuid'
 
 import {
@@ -8,6 +8,8 @@ import {
   IPlayer,
   useGameStore,
 } from '../../../stores/gameStore'
+import StyledButton from '../../Atoms/StyledButton'
+import StyledText from '../../Atoms/StyledText'
 
 function AddPlayers() {
   const [{ gameMode, players }, { setGameStatus, setPlayers }] = useGameStore()
@@ -48,11 +50,11 @@ function AddPlayers() {
 
   return (
     <SafeAreaView>
-      {gameMode === GameModeEnum.EVE && <Text>Add player</Text>}
-      {gameMode === GameModeEnum.TEAMS && <Text>Add teams</Text>}
+      {gameMode === GameModeEnum.EVE && <StyledText>Add player</StyledText>}
+      {gameMode === GameModeEnum.TEAMS && <StyledText>Add teams</StyledText>}
       {temporaryPlayers.map((player, index) => (
         <SafeAreaView key={player.id}>
-          <Text>{index + 1}</Text>
+          <StyledText>{index + 1}</StyledText>
           <TextInput
             placeholder="name"
             value={
@@ -62,14 +64,14 @@ function AddPlayers() {
             }
             onChangeText={(name) => editPlayerName(player.id, name)}
           />
-          <Button
+          <StyledButton
             title="Delete"
             onPress={() => handleDeletePlayer(player.id)}
           />
         </SafeAreaView>
       ))}
-      <Button title="Add new player" onPress={handleAddNewPlayer} />
-      <Button title="Submit" onPress={handleSubmit} />
+      <StyledButton title="Add new player" onPress={handleAddNewPlayer} />
+      <StyledButton title="Submit" onPress={handleSubmit} />
     </SafeAreaView>
   )
 }

@@ -1,6 +1,7 @@
-import { SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
+import StyledText from '../Atoms/StyledText'
 import Category from '../Category/Category'
 import Game from '../Game/Game'
 import GameMode from '../GameMode/GameMode'
@@ -25,7 +26,7 @@ function GameRouter() {
       default:
         return (
           <SafeAreaView>
-            <Text>Error</Text>
+            <StyledText>Error</StyledText>
           </SafeAreaView>
         )
     }

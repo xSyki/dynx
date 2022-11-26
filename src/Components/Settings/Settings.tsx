@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, SafeAreaView, Text, TextInput } from 'react-native'
+import { SafeAreaView, TextInput } from 'react-native'
 import Checkbox from 'expo-checkbox'
 
 import wordsList from '../../../assets/words/words.json'
@@ -7,6 +7,8 @@ import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
 import { useRoundStore } from '../../stores/roundStore'
 import getRandomWords from '../../utils/getRandomWords'
 import getRounds from '../../utils/getRounds'
+import StyledButton from '../Atoms/StyledButton'
+import StyledText from '../Atoms/StyledText'
 
 function Settings() {
   const [
@@ -32,6 +34,7 @@ function Settings() {
     )
 
     const rounds = getRounds(players, words, gameMode, numberRounds)
+
     setRounds(rounds)
 
     setSettings({ timer, rounds: numberRounds })
@@ -40,9 +43,9 @@ function Settings() {
 
   return (
     <SafeAreaView>
-      <Button onPress={handleBack} title="Back" />
+      <StyledButton onPress={handleBack} title="Back" />
       <SafeAreaView>
-        <Text>Rounds</Text>
+        <StyledText>Rounds</StyledText>
         <TextInput
           placeholder="name"
           keyboardType="numeric"
@@ -51,13 +54,13 @@ function Settings() {
         />
       </SafeAreaView>
       <SafeAreaView>
-        <Text>Timer</Text>
+        <StyledText>Timer</StyledText>
         <Checkbox
           value={timer}
           onValueChange={() => setTimer((timer) => !timer)}
         />
       </SafeAreaView>
-      <Button title="Start" onPress={handleStart} />
+      <StyledButton title="Start" onPress={handleStart} />
     </SafeAreaView>
   )
 }

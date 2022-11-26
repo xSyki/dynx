@@ -9,6 +9,14 @@ export default function getRandomWords(
 ) {
   const shuffledWords = words.sort(() => 0.5 - Math.random())
 
+  if (gameMode === GameModeEnum.TEAMS) {
+    const numberOfWord = players.length * rounds
+
+    const selectedWords = shuffledWords.slice(0, numberOfWord)
+
+    return selectedWords
+  }
+
   const numberOfWord = ((players.length * (players.length - 1)) / 2) * rounds
 
   const selectedWords = shuffledWords.slice(0, numberOfWord)

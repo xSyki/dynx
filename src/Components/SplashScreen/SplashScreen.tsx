@@ -1,23 +1,24 @@
 import styled from 'styled-components/native'
 
 import { RouterEnum, useRouterStore } from '../../stores/routerStore'
+import StyledButton from '../Atoms/StyledButton'
 
 function SplashScreen() {
   const [, { navigate }] = useRouterStore()
 
   return (
     <Wrapper>
+      <Logo>DYNX</Logo>
       <Buttons>
-        <Logo>DYNX</Logo>
-        <StyledButton onPress={() => navigate(RouterEnum.GAME)}>
-          <StyledText>Game</StyledText>
-        </StyledButton>
-        <StyledButton onPress={() => navigate(RouterEnum.GAME)}>
-          <StyledText>Your words</StyledText>
-        </StyledButton>
-        <StyledButton onPress={() => navigate(RouterEnum.RULES)}>
-          <StyledText>Rules</StyledText>
-        </StyledButton>
+        <StyledButton onPress={() => navigate(RouterEnum.GAME)} title="Game" />
+        <StyledButton
+          onPress={() => navigate(RouterEnum.USER_WORDS)}
+          title="Your words"
+        />
+        <StyledButton
+          onPress={() => navigate(RouterEnum.RULES)}
+          title="Rules"
+        />
       </Buttons>
     </Wrapper>
   )
@@ -28,24 +29,14 @@ export default SplashScreen
 const Wrapper = styled.SafeAreaView`
   flex: 1;
   flex-direction: column;
-  gap: 50px;
+  align-items: center;
 `
 
 const Buttons = styled.SafeAreaView`
   flex: 1;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-`
-
-const StyledButton = styled.TouchableOpacity`
-  font-family: LuckiestGuy;
-`
-
-const StyledText = styled.Text`
-  font-family: LuckiestGuy;
-  font-size: 32px;
-  color: #fff;
+  gap: 50px;
 `
 
 const Logo = styled.Text`

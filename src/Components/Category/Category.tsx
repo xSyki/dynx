@@ -1,7 +1,9 @@
-import { Button, SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import categories from '../../../assets/words/categories.json'
 import { GameStatusEnum, ICategory, useGameStore } from '../../stores/gameStore'
+import StyledButton from '../Atoms/StyledButton'
+import StyledText from '../Atoms/StyledText'
 
 function Category() {
   const [, { setGameStatus, setCategory }] = useGameStore()
@@ -17,10 +19,10 @@ function Category() {
 
   return (
     <SafeAreaView>
-      <Button onPress={handleBack} title="Back" />
-      <Text>Categories</Text>
+      <StyledButton onPress={handleBack} title="Back" />
+      <StyledText>Categories</StyledText>
       {categories.map((category) => (
-        <Button
+        <StyledButton
           onPress={() => handleChoseCategory(category)}
           key={category.id}
           title={category.name}

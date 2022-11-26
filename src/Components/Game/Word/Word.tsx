@@ -1,7 +1,9 @@
-import { Button, SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import { useGameStore } from '../../../stores/gameStore'
 import { GameStageEnum, useRoundStore } from '../../../stores/roundStore'
+import StyledButton from '../../Atoms/StyledButton'
+import StyledText from '../../Atoms/StyledText'
 import Timer from '../Timer/Timer'
 
 function Word() {
@@ -12,11 +14,11 @@ function Word() {
 
   return (
     <SafeAreaView>
-      <Text>{round.word.word}</Text>
+      <StyledText>{round.word.word}</StyledText>
       {settings.timer ? (
         <Timer />
       ) : (
-        <Button
+        <StyledButton
           title="Results"
           onPress={() => setGameStage(GameStageEnum.RESULT)}
         />

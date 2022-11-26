@@ -1,4 +1,4 @@
-import { Button, SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import {
   GameStatusEnum,
@@ -6,6 +6,8 @@ import {
   useGameStore,
 } from '../../../stores/gameStore'
 import { useRoundStore } from '../../../stores/roundStore'
+import StyledButton from '../../Atoms/StyledButton'
+import StyledText from '../../Atoms/StyledText'
 
 interface IResult {
   player: IPlayer
@@ -49,12 +51,12 @@ function End() {
   return (
     <SafeAreaView>
       {getPlaces().map((result) => (
-        <Text key={result.player.id}>
+        <StyledText key={result.player.id}>
           {result.player.name}: {result.score}
-        </Text>
+        </StyledText>
       ))}
-      <Button title="Start next game" onPress={handleStartNextGame} />
-      <Button title="Exit" onPress={handleExit} />
+      <StyledButton title="Start next game" onPress={handleStartNextGame} />
+      <StyledButton title="Exit" onPress={handleExit} />
     </SafeAreaView>
   )
 }

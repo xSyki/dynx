@@ -4,6 +4,7 @@ export enum RouterEnum {
   'SPLASH_SCREEN' = 'splash_screen',
   'GAME' = 'game',
   'RULES' = 'rules',
+  'USER_WORDS' = 'user_words',
 }
 
 interface IRouterState {

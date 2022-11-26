@@ -1,6 +1,8 @@
-import { Button, SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import { GameStageEnum, useRoundStore } from '../../../stores/roundStore'
+import StyledButton from '../../Atoms/StyledButton'
+import StyledText from '../../Atoms/StyledText'
 
 function Players() {
   const [{ rounds, roundNumber }, { setGameStage }] = useRoundStore()
@@ -9,8 +11,13 @@ function Players() {
 
   return (
     <SafeAreaView>
-      <Text>{round.players.map((player) => player.name).join(' - ')}</Text>
-      <Button title="Start" onPress={() => setGameStage(GameStageEnum.WORD)} />
+      <StyledText>
+        {round.players.map((player) => player.name).join(' - ')}
+      </StyledText>
+      <StyledButton
+        title="Start"
+        onPress={() => setGameStage(GameStageEnum.WORD)}
+      />
     </SafeAreaView>
   )
 }
