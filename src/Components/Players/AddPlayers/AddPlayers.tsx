@@ -23,15 +23,39 @@ function AddPlayers() {
   )
 
   useEffect(() => {
-    handleAddNewPlayer()
+    if (!temporaryPlayers.length) {
+      handleAddNewPlayer()
+    }
   }, [])
 
-  const handleSubmit = () => {
+  useEffect(() => {
     setPlayers(temporaryPlayers)
+  }, [temporaryPlayers])
+
+  const handleSubmit = () => {
+    const filteredPlayers = temporaryPlayers.filter(
+      (player) => player.name !== ''
+    )
+    const uniqPlayers = [
+      ...new Set(filteredPlayers.map((player) => player.name)),
+    ]
+
+    if (uniqPlayers.length !== filteredPlayers.length) return
+
+    if (gameMode === GameModeEnum.EVE && filteredPlayers.length < 3) return
+    if (gameMode === GameModeEnum.TEAMS && filteredPlayers.length < 2) return
+
+    setPlayers(filteredPlayers)
     setGameStatus(GameStatusEnum.CATEGORY)
   }
 
   const handleAddNewPlayer = () => {
+    if (
+      temporaryPlayers.length &&
+      temporaryPlayers[temporaryPlayers.length - 1].name === ''
+    )
+      return
+
     setTemporaryPlayers((players) => [...players, { id: uuidv4(), name: '' }])
   }
 
@@ -67,13 +91,15 @@ function AddPlayers() {
                   (playerGeneral) => playerGeneral.id === player.id
                 )?.name || ''
               }
-              onChangeText={(name) => editPlayerName(player.id, name)}
+              onChangeText={(name) =>
+                editPlayerName(player.id, name.toUpperCase())
+              }
             />
             <StyledButton
               size="sm"
               onPress={() => handleDeletePlayer(player.id)}
             >
-              <ThrashIcon height={20} width={20} fill={'white'} />
+              <ThrashIcon height={20} width={20} fill="white" />
             </StyledButton>
           </StyledPlayer>
         ))}

@@ -57,8 +57,14 @@ const gameActions = {
     },
   setGameMode:
     (gameMode: GameModeEnum | undefined): Action<IGameState> =>
-    ({ setState }) => {
-      setState({ gameMode })
+    ({ setState, getState }) => {
+      if (getState().gameMode !== gameMode) {
+        setState({ players: [] })
+      }
+
+      setState({
+        gameMode,
+      })
     },
   setPlayers:
     (players: IPlayer[]): Action<IGameState> =>
