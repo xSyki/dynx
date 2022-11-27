@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SafeAreaView, TextInput } from 'react-native'
+import { SafeAreaView } from 'react-native'
 
 import Checkbox from 'expo-checkbox'
 
@@ -10,6 +10,7 @@ import getRandomWords from '../../utils/getRandomWords'
 import getRounds from '../../utils/getRounds'
 import StyledButton from '../Atoms/StyledButton'
 import StyledText from '../Atoms/StyledText'
+import StyledTextInput from '../Atoms/StyledTextInput'
 
 function Settings() {
   const [
@@ -19,10 +20,6 @@ function Settings() {
   const [, { setRounds }] = useRoundStore()
   const [numberRounds, setNumberRounds] = useState(settings.rounds)
   const [timer, setTimer] = useState(settings.timer)
-
-  const handleBack = () => {
-    setGameStatus(GameStatusEnum.CATEGORY)
-  }
 
   const handleStart = () => {
     if (!category || !gameMode) return
@@ -44,10 +41,9 @@ function Settings() {
 
   return (
     <SafeAreaView>
-      <StyledButton onPress={handleBack} title="Back" />
       <SafeAreaView>
         <StyledText>Rounds</StyledText>
-        <TextInput
+        <StyledTextInput
           placeholder="name"
           keyboardType="numeric"
           value={String(numberRounds)}

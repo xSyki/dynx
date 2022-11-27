@@ -11,9 +11,10 @@ import Word from './Word/Word'
 
 function Game() {
   const [, { setGameStatus }] = useGameStore()
-  const [{ gameStage }] = useRoundStore()
+  const [{ gameStage }, { resetGame }] = useRoundStore()
 
   const handleBack = () => {
+    resetGame()
     setGameStatus(GameStatusEnum.CATEGORY)
   }
 

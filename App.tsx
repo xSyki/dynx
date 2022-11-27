@@ -5,7 +5,6 @@ import { useFonts } from 'expo-font'
 import * as ExpoSplashScreen from 'expo-splash-screen'
 import styled, { ThemeProvider } from 'styled-components/native'
 
-import StyledButton from './src/Components/Atoms/StyledButton'
 import GameRouter from './src/Components/GameRouter/GameRouter'
 import Rules from './src/Components/Rules/Rules'
 import SplashScreen from './src/Components/SplashScreen/SplashScreen'
@@ -16,7 +15,7 @@ import { theme } from './src/styles/theme'
 ExpoSplashScreen.preventAutoHideAsync()
 
 function App() {
-  const [{ route }, { navigate }] = useRouterStore()
+  const [{ route }] = useRouterStore()
 
   const [fontsLoaded] = useFonts({
     LuckiestGuy: require('./assets/fonts/LuckiestGuy.otf'),
@@ -53,13 +52,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppWrapper onLayout={onLayoutRootView}>
-        <StyledButton
-          title="Back"
-          onPress={() => navigate(RouterEnum.SPLASH_SCREEN)}
-        />
-        {redirect(route)}
-      </AppWrapper>
+      <AppWrapper onLayout={onLayoutRootView}>{redirect(route)}</AppWrapper>
     </ThemeProvider>
   )
 }

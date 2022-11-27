@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 
 interface IStyledTextInput {
   placeholder: string
-  keyboardType: KeyboardTypeOptions
+  keyboardType?: KeyboardTypeOptions
   value: string
   onChangeText: (string: string) => void
 }
@@ -28,4 +28,5 @@ const TextInputWrapper = styled.TextInput`
   font-family: LuckiestGuy;
   color: ${(props) => props.theme.text.default};
   font-size: 20px;
+  flex-grow: 1;
 `

@@ -30,4 +30,5 @@ const ButtonText = styled.Text<{ size: sizeType | undefined }>`
   ${(props) => props.size === 'sm' && 'font-size: 20px;'}
   ${(props) => props.size === 'bg' && 'font-size: 40px;'}
   font-family: LuckiestGuy;
+  text-align: center;
 `

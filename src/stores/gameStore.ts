@@ -45,7 +45,7 @@ const gameInitialState: IGameState = {
   category: undefined,
   settings: {
     timer: false,
-    rounds: 2,
+    rounds: 1,
   },
 }
 

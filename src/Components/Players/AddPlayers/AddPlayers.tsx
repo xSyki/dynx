@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { TextInput } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import styled from 'styled-components/native'
 import { v4 as uuidv4 } from 'uuid'
@@ -12,6 +12,7 @@ import {
 } from '../../../stores/gameStore'
 import StyledButton from '../../Atoms/StyledButton'
 import StyledText from '../../Atoms/StyledText'
+import StyledTextInput from '../../Atoms/StyledTextInput'
 
 function AddPlayers() {
   const [{ gameMode, players }, { setGameStatus, setPlayers }] = useGameStore()
@@ -54,25 +55,27 @@ function AddPlayers() {
     <StyledAddPlayers>
       {gameMode === GameModeEnum.EVE && <StyledText>Add player</StyledText>}
       {gameMode === GameModeEnum.TEAMS && <StyledText>Add teams</StyledText>}
-      {temporaryPlayers.map((player, index) => (
-        <StyledPlayer key={player.id}>
-          <StyledText>{index + 1}.</StyledText>
-          <TextInput
-            placeholder="name"
-            value={
-              temporaryPlayers.find(
-                (playerGeneral) => playerGeneral.id === player.id
-              )?.name || ''
-            }
-            onChangeText={(name) => editPlayerName(player.id, name)}
-          />
-          <StyledButton
-            size="sm"
-            title="Delete"
-            onPress={() => handleDeletePlayer(player.id)}
-          />
-        </StyledPlayer>
-      ))}
+      <ScrollView>
+        {temporaryPlayers.map((player, index) => (
+          <StyledPlayer key={player.id}>
+            <StyledText>{index + 1}.</StyledText>
+            <StyledTextInput
+              placeholder="name"
+              value={
+                temporaryPlayers.find(
+                  (playerGeneral) => playerGeneral.id === player.id
+                )?.name || ''
+              }
+              onChangeText={(name) => editPlayerName(player.id, name)}
+            />
+            <StyledButton
+              size="sm"
+              title="Delete"
+              onPress={() => handleDeletePlayer(player.id)}
+            />
+          </StyledPlayer>
+        ))}
+      </ScrollView>
       <StyledButton title="Add new player" onPress={handleAddNewPlayer} />
       <StyledButton title="Submit" onPress={handleSubmit} />
     </StyledAddPlayers>
@@ -81,6 +84,16 @@ function AddPlayers() {
 
 export default AddPlayers
 
-const StyledAddPlayers = styled.SafeAreaView``
+const StyledAddPlayers = styled.SafeAreaView`
+  height: 100%;
+`
 
-const StyledPlayer = styled.SafeAreaView``
+const StyledPlayers = styled.SafeAreaView``
+
+const StyledPlayer = styled.SafeAreaView`
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+`

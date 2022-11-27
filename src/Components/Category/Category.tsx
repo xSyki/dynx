@@ -8,10 +8,6 @@ import StyledText from '../Atoms/StyledText'
 function Category() {
   const [, { setGameStatus, setCategory }] = useGameStore()
 
-  const handleBack = () => {
-    setGameStatus(GameStatusEnum.PLAYERS)
-  }
-
   const handleChoseCategory = (category: ICategory) => {
     setCategory(category)
     setGameStatus(GameStatusEnum.SETTINGS)
@@ -19,7 +15,6 @@ function Category() {
 
   return (
     <SafeAreaView>
-      <StyledButton onPress={handleBack} title="Back" />
       <StyledText>Categories</StyledText>
       {categories.map((category) => (
         <StyledButton
