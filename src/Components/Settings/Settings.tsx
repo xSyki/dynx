@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { SafeAreaView } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import Checkbox from 'expo-checkbox'
+import styled from 'styled-components/native'
 
 import wordsList from '../../../assets/words/words.json'
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
@@ -40,26 +41,32 @@ function Settings() {
   }
 
   return (
-    <SafeAreaView>
-      <SafeAreaView>
-        <StyledText>Rounds</StyledText>
+    <ScrollView>
+      <Row>
+        <StyledText>Rounds: </StyledText>
         <StyledTextInput
           placeholder="name"
           keyboardType="numeric"
           value={String(numberRounds)}
           onChangeText={(rounds) => setNumberRounds(Number(rounds))}
         />
-      </SafeAreaView>
-      <SafeAreaView>
-        <StyledText>Timer</StyledText>
+      </Row>
+      <Row>
+        <StyledText>Timer: </StyledText>
         <Checkbox
           value={timer}
           onValueChange={() => setTimer((timer) => !timer)}
         />
-      </SafeAreaView>
+      </Row>
       <StyledButton title="Start" onPress={handleStart} />
-    </SafeAreaView>
+    </ScrollView>
   )
 }
 
 export default Settings
+
+const Row = styled.SafeAreaView`
+  flex: 1;
+  flex-direction: row;
+  height: 100%;
+`

@@ -15,7 +15,7 @@ function Category() {
 
   return (
     <SafeAreaView>
-      <StyledText>Categories</StyledText>
+      <StyledText size="bg">Categories</StyledText>
       {categories.map((category) => (
         <StyledButton
           onPress={() => handleChoseCategory(category)}

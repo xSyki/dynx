@@ -8,6 +8,7 @@ declare module 'styled-components/native' {
 
     text: {
       default: string
+      darker: string
     }
   }
 }

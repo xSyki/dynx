@@ -29,7 +29,7 @@ function Timer() {
 
   return (
     <SafeAreaView>
-      <StyledText>{timeToDisplay ? timeToDisplay : 'GO'}</StyledText>
+      <StyledText size="bg">{timeToDisplay ? timeToDisplay : 'GO'}</StyledText>
     </SafeAreaView>
   )
 }

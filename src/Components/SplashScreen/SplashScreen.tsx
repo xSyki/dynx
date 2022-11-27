@@ -10,12 +10,18 @@ function SplashScreen() {
     <Wrapper>
       <Logo>DYNX</Logo>
       <Buttons>
-        <StyledButton onPress={() => navigate(RouterEnum.GAME)} title="Game" />
         <StyledButton
+          size="bg"
+          onPress={() => navigate(RouterEnum.GAME)}
+          title="Game"
+        />
+        <StyledButton
+          size="bg"
           onPress={() => navigate(RouterEnum.USER_WORDS)}
           title="Your words"
         />
         <StyledButton
+          size="bg"
           onPress={() => navigate(RouterEnum.RULES)}
           title="Rules"
         />
