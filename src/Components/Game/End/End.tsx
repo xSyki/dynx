@@ -1,5 +1,6 @@
 import { SafeAreaView } from 'react-native'
 
+import { t } from '../../../i18n/config'
 import {
   GameStatusEnum,
   IPlayer,
@@ -55,8 +56,11 @@ function End() {
           {result.player.name}: {result.score}
         </StyledText>
       ))}
-      <StyledButton title="Start next game" onPress={handleStartNextGame} />
-      <StyledButton title="Exit" onPress={handleExit} />
+      <StyledButton
+        title={t('start_next_game')}
+        onPress={handleStartNextGame}
+      />
+      <StyledButton title={t('exit')} onPress={handleExit} />
     </SafeAreaView>
   )
 }

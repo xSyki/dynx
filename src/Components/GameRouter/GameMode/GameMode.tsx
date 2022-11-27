@@ -1,3 +1,4 @@
+import { t } from 'i18next'
 import styled from 'styled-components/native'
 
 import {
@@ -18,14 +19,14 @@ export default function GameMode() {
 
   return (
     <StyledGameMode>
-      <StyledText size="bg">Game mode</StyledText>
+      <StyledText size="bg">{t('game_mode')}</StyledText>
       <StyledButton
         onPress={() => handleSetGameMode(GameModeEnum.EVE)}
-        title="1vs1"
+        title={t('eve')}
       />
       <StyledButton
         onPress={() => handleSetGameMode(GameModeEnum.TEAMS)}
-        title="Teams"
+        title={t('teams')}
       />
     </StyledGameMode>
   )

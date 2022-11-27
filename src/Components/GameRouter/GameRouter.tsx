@@ -2,12 +2,13 @@ import { SafeAreaView } from 'react-native'
 
 import styled from 'styled-components/native'
 
+import { t } from '../../i18n/config'
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
 import { RouterEnum, useRouterStore } from '../../stores/routerStore'
 import StyledButton from '../Atoms/StyledButton'
 import StyledText from '../Atoms/StyledText'
-import Category from './Category/Category'
 import Game from '../Game/Game'
+import Category from './Category/Category'
 import GameMode from './GameMode/GameMode'
 import Players from './Players/Players'
 import Settings from './Settings/Settings'
@@ -58,7 +59,7 @@ function GameRouter() {
     <StyledGame>
       {gameStatus !== GameStatusEnum.GAME && (
         <StyledHeader>
-          <StyledButton size="sm" title="Back" onPress={handleBack} />
+          <StyledButton size="sm" title={t('back')} onPress={handleBack} />
         </StyledHeader>
       )}
       <GameStatusWrapper>{renderGame(gameStatus)}</GameStatusWrapper>

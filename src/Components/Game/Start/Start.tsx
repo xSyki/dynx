@@ -1,5 +1,6 @@
 import { SafeAreaView } from 'react-native'
 
+import { t } from '../../../i18n/config'
 import { GameStageEnum, useRoundStore } from '../../../stores/roundStore'
 import StyledButton from '../../Atoms/StyledButton'
 
@@ -9,7 +10,7 @@ function Start() {
   return (
     <SafeAreaView>
       <StyledButton
-        title="start"
+        title={t('start')}
         onPress={() => setGameStage(GameStageEnum.PLAYERS)}
       />
     </SafeAreaView>

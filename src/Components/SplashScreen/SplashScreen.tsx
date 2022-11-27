@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 
-import i18n from '../../i18n/config'
+import { t } from '../../i18n/config'
 import { RouterEnum, useRouterStore } from '../../stores/routerStore'
 import StyledButton from '../Atoms/StyledButton'
 
@@ -14,22 +14,22 @@ function SplashScreen() {
         <StyledButton
           size="bg"
           onPress={() => navigate(RouterEnum.GAME)}
-          title={i18n.t('game')}
+          title={t('game')}
         />
         <StyledButton
           size="bg"
           onPress={() => navigate(RouterEnum.USER_WORDS)}
-          title={i18n.t('your_words')}
+          title={t('your_words')}
         />
         <StyledButton
           size="bg"
           onPress={() => navigate(RouterEnum.RULES)}
-          title={i18n.t('rules')}
+          title={t('rules')}
         />
         <StyledButton
           size="bg"
           onPress={() => navigate(RouterEnum.SETTINGS)}
-          title={i18n.t('settings')}
+          title={t('settings')}
         />
       </Buttons>
     </Wrapper>

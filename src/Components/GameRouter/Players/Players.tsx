@@ -4,6 +4,7 @@ import styled from 'styled-components/native'
 import { v4 as uuidv4 } from 'uuid'
 
 import ThrashIcon from '../../../../assets/icons/trash.svg'
+import { t } from '../../../i18n/config'
 import {
   GameModeEnum,
   GameStatusEnum,
@@ -99,17 +100,17 @@ function Players() {
   return (
     <StyledAddPlayers>
       {gameMode === GameModeEnum.EVE && (
-        <StyledText size="bg">Add player</StyledText>
+        <StyledText size="bg">{t('add_player')}</StyledText>
       )}
       {gameMode === GameModeEnum.TEAMS && (
-        <StyledText size="bg">Add teams</StyledText>
+        <StyledText size="bg">{t('add_teams')}</StyledText>
       )}
       <StyledPlayers>
         {temporaryPlayers.map((player, index) => (
           <StyledPlayer key={player.id}>
             <StyledText>{index + 1}.</StyledText>
             <StyledTextInput
-              placeholder="name"
+              placeholder={t('name')}
               value={
                 temporaryPlayers.find(
                   (playerGeneral) => playerGeneral.id === player.id
@@ -129,12 +130,12 @@ function Players() {
         ))}
       </StyledPlayers>
       <StyledButton
-        title="Add new player"
+        title={t('add_new_player')}
         onPress={handleAddNewPlayer}
         disabled={canAddNewPlayer()}
       />
       <StyledButton
-        title="Submit"
+        title={t('submit')}
         onPress={handleSubmit}
         disabled={!canSubmit()}
       />

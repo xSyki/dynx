@@ -3,5 +3,21 @@
   "your_words": "Twoje słowa",
   "rules": "Zasady",
   "settings": "Ustawienia",
-  "back": "Wróć"
+  "back": "Wróć",
+  "submit": "Zatwierdź",
+  "start": "Start",
+  "results": "Wyniki",
+  "lost": "Przegrana",
+  "won": "Wygrana",
+  "eve": "1vs1",
+  "teams": "Drużyny",
+  "name": "Imię",
+  "add_new_player": "Dodaj nowego gracza",
+  "game_mode": "Tryb gry",
+  "add_player": "Dodaj gracza",
+  "add_teams": "Add teams",
+  "timer": "Stoper",
+  "rounds": "Rundy",
+  "start_next_game": "Zacznij następną grę",
+  "exit": "Exit"
 }

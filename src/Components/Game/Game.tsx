@@ -1,5 +1,6 @@
 import { SafeAreaView } from 'react-native'
 
+import { t } from '../../i18n/config'
 import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
 import { GameStageEnum, useRoundStore } from '../../stores/roundStore'
 import StyledButton from '../Atoms/StyledButton'
@@ -20,7 +21,7 @@ function Game() {
 
   return (
     <SafeAreaView>
-      <StyledButton onPress={handleBack} title="Back" />
+      <StyledButton onPress={handleBack} title={t('back')} />
       {gameStage === GameStageEnum.START && <Start />}
       {gameStage === GameStageEnum.PLAYERS && <Players />}
       {gameStage === GameStageEnum.WORD && <Word />}

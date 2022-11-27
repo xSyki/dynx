@@ -1,11 +1,12 @@
 import styled from 'styled-components/native'
 
+import { t } from '../../i18n/config'
 import StyledText from '../Atoms/StyledText'
 
 function UserWords() {
   return (
     <UserWordsWrapper>
-      <StyledText>UserWords</StyledText>
+      <StyledText>{t('your_words')}</StyledText>
     </UserWordsWrapper>
   )
 }

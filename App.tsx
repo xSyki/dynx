@@ -11,7 +11,7 @@ import Rules from './src/Components/Rules/Rules'
 import Settings from './src/Components/Settings/Settings'
 import SplashScreen from './src/Components/SplashScreen/SplashScreen'
 import UserWords from './src/Components/UserWords/UserWords'
-import i18n from './src/i18n/config'
+import { t } from './src/i18n/config'
 import { RouterEnum, useRouterStore } from './src/stores/routerStore'
 import { theme } from './src/styles/theme'
 
@@ -63,7 +63,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <AppWrapper onLayout={onLayoutRootView}>
         {route !== RouterEnum.GAME && route !== RouterEnum.SPLASH_SCREEN && (
-          <StyledButton size="sm" onPress={handleBack} title={i18n.t('back')} />
+          <StyledButton size="sm" onPress={handleBack} title={t('back')} />
         )}
         {redirect()}
       </AppWrapper>

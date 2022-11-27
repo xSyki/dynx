@@ -42,4 +42,6 @@ use(Backend)
 
 i18n.languages = [LanguageEnum.PL, LanguageEnum.EN]
 
+export const { t } = i18n
+
 export default i18n

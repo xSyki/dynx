@@ -1,11 +1,15 @@
 import { Text } from 'react-native'
 
+import { t } from 'i18next'
 import styled from 'styled-components/native'
+
+import ChangeLanguage from './ChangeLanguage/ChangeLanguage'
 
 function Settings() {
   return (
     <StyledSettings>
-      <Text>Settings</Text>
+      <Text>{t('settings')}</Text>
+      <ChangeLanguage />
     </StyledSettings>
   )
 }

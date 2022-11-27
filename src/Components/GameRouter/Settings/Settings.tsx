@@ -5,6 +5,7 @@ import Checkbox from 'expo-checkbox'
 import styled from 'styled-components/native'
 
 import wordsList from '../../../../assets/words/words.json'
+import { t } from '../../../i18n/config'
 import { GameStatusEnum, useGameStore } from '../../../stores/gameStore'
 import { useRoundStore } from '../../../stores/roundStore'
 import getRandomWords from '../../../utils/getRandomWords'
@@ -58,7 +59,7 @@ function Settings() {
           onValueChange={() => setTimer((timer) => !timer)}
         />
       </Row>
-      <StyledButton title="Start" onPress={handleStart} />
+      <StyledButton title={t('start')} onPress={handleStart} />
     </ScrollView>
   )
 }

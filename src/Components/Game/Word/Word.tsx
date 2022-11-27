@@ -2,7 +2,7 @@ import { SafeAreaView } from 'react-native'
 
 import { useTranslation } from 'react-i18next'
 
-import { LanguageEnum } from '../../../i18n/config'
+import { LanguageEnum, t } from '../../../i18n/config'
 import { useGameStore } from '../../../stores/gameStore'
 import { GameStageEnum, useRoundStore } from '../../../stores/roundStore'
 import StyledButton from '../../Atoms/StyledButton'
@@ -24,7 +24,7 @@ function Word() {
         <Timer />
       ) : (
         <StyledButton
-          title="Results"
+          title={t('results')}
           onPress={() => setGameStage(GameStageEnum.RESULT)}
         />
       )}
