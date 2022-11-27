@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { SafeAreaView, TextInput } from 'react-native'
+
 import Checkbox from 'expo-checkbox'
 
 import wordsList from '../../../assets/words/words.json'

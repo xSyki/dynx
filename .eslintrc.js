@@ -9,7 +9,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  plugins: ['@typescript-eslint', 'react', 'simple-import-sort', 'prettier'],
+  plugins: ['@typescript-eslint', 'react', 'import', 'prettier'],
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
@@ -30,17 +30,36 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    'simple-import-sort/imports': [
+    'sort-imports': [
+      'error',
+      { ignoreCase: true, ignoreDeclarationSort: true },
+    ],
+    'import/order': [
       'error',
       {
         groups: [
-          ['^react', '^@?\\w'],
-          ['^(@|components)(/.*|$)'],
-          ['^\\u0000'],
-          ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
-          ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
-          ['^.+\\.?(styles)$', '^.+\\.?(css)$', '^.+\\.?(scss)$'],
+          ['external', 'builtin'],
+          'internal',
+          ['sibling', 'parent'],
+          'index',
         ],
+        pathGroups: [
+          {
+            pattern: '@(react|react-native)',
+            group: 'external',
+            position: 'before',
+          },
+          {
+            pattern: '@src/**',
+            group: 'internal',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['internal', 'react'],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
       },
     ],
   },

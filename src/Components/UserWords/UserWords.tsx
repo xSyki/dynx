@@ -15,5 +15,5 @@ export default UserWords
 const UserWordsWrapper = styled.SafeAreaView`
   font-family: LuckiestGuy;
   flex: 1;
-  background-color: skyblue;
+  background-color: ${(props) => props.theme.background.default};
 `

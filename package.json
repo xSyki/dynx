@@ -43,6 +43,7 @@
     "@babel/core": "^7.20.2",
     "@types/react": "~18.0.25",
     "@types/react-native": "~0.70.6",
+    "@types/styled-components": "^5.1.26",
     "@types/styled-components-react-native": "^5.2.0",
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.43.0",

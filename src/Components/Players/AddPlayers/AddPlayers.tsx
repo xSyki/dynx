@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import { SafeAreaView, TextInput } from 'react-native'
+import { TextInput } from 'react-native'
+
+import styled from 'styled-components/native'
 import { v4 as uuidv4 } from 'uuid'
 
 import {
@@ -49,12 +51,12 @@ function AddPlayers() {
   }
 
   return (
-    <SafeAreaView>
+    <StyledAddPlayers>
       {gameMode === GameModeEnum.EVE && <StyledText>Add player</StyledText>}
       {gameMode === GameModeEnum.TEAMS && <StyledText>Add teams</StyledText>}
       {temporaryPlayers.map((player, index) => (
-        <SafeAreaView key={player.id}>
-          <StyledText>{index + 1}</StyledText>
+        <StyledPlayer key={player.id}>
+          <StyledText>{index + 1}.</StyledText>
           <TextInput
             placeholder="name"
             value={
@@ -65,15 +67,20 @@ function AddPlayers() {
             onChangeText={(name) => editPlayerName(player.id, name)}
           />
           <StyledButton
+            size="sm"
             title="Delete"
             onPress={() => handleDeletePlayer(player.id)}
           />
-        </SafeAreaView>
+        </StyledPlayer>
       ))}
       <StyledButton title="Add new player" onPress={handleAddNewPlayer} />
       <StyledButton title="Submit" onPress={handleSubmit} />
-    </SafeAreaView>
+    </StyledAddPlayers>
   )
 }
 
 export default AddPlayers
+
+const StyledAddPlayers = styled.SafeAreaView``
+
+const StyledPlayer = styled.SafeAreaView``
