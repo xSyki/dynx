@@ -1,4 +1,4 @@
-import { SafeAreaView } from 'react-native'
+import styled from 'styled-components/native'
 
 import {
   GameModeEnum,
@@ -17,7 +17,7 @@ export default function GameMode() {
   }
 
   return (
-    <SafeAreaView>
+    <StyledGameMode>
       <StyledText size="bg">Game mode</StyledText>
       <StyledButton
         onPress={() => handleSetGameMode(GameModeEnum.EVE)}
@@ -27,6 +27,10 @@ export default function GameMode() {
         onPress={() => handleSetGameMode(GameModeEnum.TEAMS)}
         title="Teams"
       />
-    </SafeAreaView>
+    </StyledGameMode>
   )
 }
+
+const StyledGameMode = styled.SafeAreaView`
+  width: 100%;
+`

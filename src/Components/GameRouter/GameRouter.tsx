@@ -57,9 +57,11 @@ function GameRouter() {
   return (
     <StyledGame>
       {gameStatus !== GameStatusEnum.GAME && (
-        <StyledButton size="sm" title="Back" onPress={handleBack} />
+        <StyledHeader>
+          <StyledButton size="sm" title="Back" onPress={handleBack} />
+        </StyledHeader>
       )}
-      {renderGame(gameStatus)}
+      <GameStatusWrapper>{renderGame(gameStatus)}</GameStatusWrapper>
     </StyledGame>
   )
 }
@@ -69,4 +71,10 @@ export default GameRouter
 const StyledGame = styled.SafeAreaView`
   flex: 1;
   margin: 20px;
+`
+
+const StyledHeader = styled.View``
+
+const GameStatusWrapper = styled.SafeAreaView`
+  flex-grow: 1;
 `
