@@ -1,5 +1,6 @@
 import styled from 'styled-components/native'
 
+import i18n from '../../i18n/config'
 import { RouterEnum, useRouterStore } from '../../stores/routerStore'
 import StyledButton from '../Atoms/StyledButton'
 
@@ -8,22 +9,27 @@ function SplashScreen() {
 
   return (
     <Wrapper>
-      <Logo>DYNX</Logo>
+      <Logo>JINX</Logo>
       <Buttons>
         <StyledButton
           size="bg"
           onPress={() => navigate(RouterEnum.GAME)}
-          title="Game"
+          title={i18n.t('game')}
         />
         <StyledButton
           size="bg"
           onPress={() => navigate(RouterEnum.USER_WORDS)}
-          title="Your words"
+          title={i18n.t('your_words')}
         />
         <StyledButton
           size="bg"
           onPress={() => navigate(RouterEnum.RULES)}
-          title="Rules"
+          title={i18n.t('rules')}
+        />
+        <StyledButton
+          size="bg"
+          onPress={() => navigate(RouterEnum.SETTINGS)}
+          title={i18n.t('settings')}
         />
       </Buttons>
     </Wrapper>

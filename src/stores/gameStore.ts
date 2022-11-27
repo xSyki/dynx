@@ -1,5 +1,7 @@
 import { Action, createHook, createStore } from 'react-sweet-state'
 
+import { LanguageEnum } from '../i18n/config'
+
 export enum GameStatusEnum {
   'GAME_MODE' = 'game_mode',
   'PLAYERS' = 'players',
@@ -20,7 +22,7 @@ export interface IPlayer {
 
 export interface ICategory {
   id: string
-  name: string
+  name: Record<LanguageEnum, string>
   image: string
   file: string
 }

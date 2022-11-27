@@ -6,11 +6,11 @@ import { GameStatusEnum, useGameStore } from '../../stores/gameStore'
 import { RouterEnum, useRouterStore } from '../../stores/routerStore'
 import StyledButton from '../Atoms/StyledButton'
 import StyledText from '../Atoms/StyledText'
-import Category from '../Category/Category'
+import Category from './Category/Category'
 import Game from '../Game/Game'
-import GameMode from '../GameMode/GameMode'
-import Players from '../Players/Players'
-import Settings from '../Settings/Settings'
+import GameMode from './GameMode/GameMode'
+import Players from './Players/Players'
+import Settings from './Settings/Settings'
 
 function GameRouter() {
   const [, { navigate }] = useRouterStore()

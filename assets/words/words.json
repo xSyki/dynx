@@ -1,32 +1,95 @@
 [
   {
-    "word": "car",
+    "word": { "pl": "Auto", "en": "Car" },
     "id": "0",
-    "categories": ["0"]
+    "categories": ["0", "1"]
   },
   {
-    "word": "city",
+    "word": { "pl": "Miasto", "en": "City" },
     "id": "1",
-    "categories": ["0"]
+    "categories": ["0", "1"]
   },
   {
-    "word": "person",
+    "word": { "pl": "Sportowiec", "en": "Sportsman" },
     "id": "2",
-    "categories": ["0"]
+    "categories": ["0", "1"]
   },
   {
-    "word": "vodka",
+    "word": { "pl": "Drużyna sportowa", "en": "Sport team" },
+    "id": "6",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Gra komputerowa", "en": "Computer game" },
+    "id": "7",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Gatunek filmowy", "en": "Film genre" },
+    "id": "8",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Podzespół komputerowy", "en": "Computer component" },
+    "id": "9",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zwierze", "en": "Animal" },
+    "id": "10",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Materiał budowlany", "en": "Building material" },
+    "id": "11",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": {
+      "pl": "Kraj sąsiadujący z Polską",
+      "en": "A country bordering on Poland"
+    },
+    "id": "12",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Napój gazowany", "en": "Fizzy drink" },
+    "id": "13",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Aplikacja", "en": "App" },
+    "id": "14",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Social media", "en": "Social media" },
+    "id": "15",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Owoc", "en": "Fruit" },
+    "id": "16",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Warzywo", "en": "Vegetable" },
+    "id": "16",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Wódka", "en": "Vodka" },
     "id": "3",
-    "categories": ["1"]
+    "categories": ["0", "2"]
   },
   {
-    "word": "drink",
+    "word": { "pl": "Drink", "en": "Drink" },
     "id": "4",
-    "categories": ["1"]
+    "categories": ["0", "2"]
   },
   {
-    "word": "porn star",
+    "word": { "pl": "Gwiazda porno", "en": "Porn star" },
     "id": "5",
-    "categories": ["1"]
+    "categories": ["0", "2"]
   }
 ]

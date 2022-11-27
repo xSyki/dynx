@@ -3,7 +3,7 @@ import styled from 'styled-components/native'
 import { sizeType } from './styledComponentsTypes'
 
 interface IStyledButton {
-  title?: string
+  title?: string | null
   onPress: () => void
   size?: sizeType
   children?: React.ReactNode

@@ -5,17 +5,20 @@ import { useFonts } from 'expo-font'
 import * as ExpoSplashScreen from 'expo-splash-screen'
 import styled, { ThemeProvider } from 'styled-components/native'
 
+import StyledButton from './src/Components/Atoms/StyledButton'
 import GameRouter from './src/Components/GameRouter/GameRouter'
 import Rules from './src/Components/Rules/Rules'
+import Settings from './src/Components/Settings/Settings'
 import SplashScreen from './src/Components/SplashScreen/SplashScreen'
 import UserWords from './src/Components/UserWords/UserWords'
+import i18n from './src/i18n/config'
 import { RouterEnum, useRouterStore } from './src/stores/routerStore'
 import { theme } from './src/styles/theme'
 
 ExpoSplashScreen.preventAutoHideAsync()
 
 function App() {
-  const [{ route }] = useRouterStore()
+  const [{ route }, { navigate }] = useRouterStore()
 
   const [fontsLoaded] = useFonts({
     LuckiestGuy: require('./assets/fonts/LuckiestGuy.otf'),
@@ -31,7 +34,7 @@ function App() {
     return null
   }
 
-  const redirect = (route: RouterEnum) => {
+  const redirect = () => {
     switch (route) {
       case RouterEnum.SPLASH_SCREEN:
         return <SplashScreen />
@@ -41,6 +44,8 @@ function App() {
         return <UserWords />
       case RouterEnum.RULES:
         return <Rules />
+      case RouterEnum.SETTINGS:
+        return <Settings />
       default:
         return (
           <AppWrapper>
@@ -50,9 +55,18 @@ function App() {
     }
   }
 
+  const handleBack = () => {
+    navigate(RouterEnum.SPLASH_SCREEN)
+  }
+
   return (
     <ThemeProvider theme={theme}>
-      <AppWrapper onLayout={onLayoutRootView}>{redirect(route)}</AppWrapper>
+      <AppWrapper onLayout={onLayoutRootView}>
+        {route !== RouterEnum.GAME && route !== RouterEnum.SPLASH_SCREEN && (
+          <StyledButton size="sm" onPress={handleBack} title={i18n.t('back')} />
+        )}
+        {redirect()}
+      </AppWrapper>
     </ThemeProvider>
   )
 }

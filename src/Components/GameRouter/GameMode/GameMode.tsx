@@ -4,9 +4,9 @@ import {
   GameModeEnum,
   GameStatusEnum,
   useGameStore,
-} from '../../stores/gameStore'
-import StyledButton from '../Atoms/StyledButton'
-import StyledText from '../Atoms/StyledText'
+} from '../../../stores/gameStore'
+import StyledButton from '../../Atoms/StyledButton'
+import StyledText from '../../Atoms/StyledText'
 
 export default function GameMode() {
   const [, { setGameMode, setGameStatus }] = useGameStore()

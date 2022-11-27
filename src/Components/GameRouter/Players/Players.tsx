@@ -3,16 +3,16 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components/native'
 import { v4 as uuidv4 } from 'uuid'
 
-import ThrashIcon from '../../../assets/icons/trash.svg'
+import ThrashIcon from '../../../../assets/icons/trash.svg'
 import {
   GameModeEnum,
   GameStatusEnum,
   IPlayer,
   useGameStore,
-} from '../../stores/gameStore'
-import StyledButton from '../Atoms/StyledButton'
-import StyledText from '../Atoms/StyledText'
-import StyledTextInput from '../Atoms/StyledTextInput'
+} from '../../../stores/gameStore'
+import StyledButton from '../../Atoms/StyledButton'
+import StyledText from '../../Atoms/StyledText'
+import StyledTextInput from '../../Atoms/StyledTextInput'
 
 function Players() {
   const [{ gameMode, players }, { setGameStatus, setPlayers }] = useGameStore()

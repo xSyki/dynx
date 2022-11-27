@@ -5,6 +5,7 @@ export enum RouterEnum {
   'GAME' = 'game',
   'RULES' = 'rules',
   'USER_WORDS' = 'user_words',
+  'SETTINGS' = 'settings',
 }
 
 interface IRouterState {

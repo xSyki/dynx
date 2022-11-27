@@ -1,5 +1,6 @@
 import { Action, createHook, createStore } from 'react-sweet-state'
 
+import { LanguageEnum } from '../i18n/config'
 import { IPlayer } from './gameStore'
 
 export enum GameStageEnum {
@@ -17,7 +18,7 @@ export interface IRound {
 }
 
 export interface IWord {
-  word: string
+  word: Record<LanguageEnum, string>
   id: string
   categories: string[]
 }
