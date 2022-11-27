@@ -3,17 +3,19 @@ import styled from 'styled-components/native'
 import { sizeType } from './styledComponentsTypes'
 
 interface IStyledButton {
-  title: string
+  title?: string
   onPress: () => void
   size?: sizeType
+  children?: React.ReactNode
 }
 
 function StyledButton(props: IStyledButton) {
-  const { title, onPress, size } = props
+  const { title, onPress, size, children } = props
 
   return (
     <StyledButtonWrapper onPress={onPress}>
-      <ButtonText size={size}>{title}</ButtonText>
+      {title ? <ButtonText size={size}>{title}</ButtonText> : null}
+      {children}
     </StyledButtonWrapper>
   )
 }

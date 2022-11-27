@@ -4,6 +4,7 @@ import { ScrollView } from 'react-native'
 import styled from 'styled-components/native'
 import { v4 as uuidv4 } from 'uuid'
 
+import ThrashIcon from '../../../../assets/icons/trash.svg'
 import {
   GameModeEnum,
   GameStatusEnum,
@@ -70,9 +71,10 @@ function AddPlayers() {
             />
             <StyledButton
               size="sm"
-              title="Delete"
               onPress={() => handleDeletePlayer(player.id)}
-            />
+            >
+              <ThrashIcon height={20} width={20} fill={'white'} />
+            </StyledButton>
           </StyledPlayer>
         ))}
       </ScrollView>
@@ -87,8 +89,6 @@ export default AddPlayers
 const StyledAddPlayers = styled.SafeAreaView`
   height: 100%;
 `
-
-const StyledPlayers = styled.SafeAreaView``
 
 const StyledPlayer = styled.SafeAreaView`
   flex: 1;
