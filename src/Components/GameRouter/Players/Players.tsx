@@ -110,6 +110,7 @@ function Players() {
           <StyledPlayer key={player.id}>
             <StyledText>{index + 1}.</StyledText>
             <StyledTextInput
+              onSubmitEditing={() => handleAddNewPlayer()}
               placeholder={t('name')}
               value={
                 temporaryPlayers.find(

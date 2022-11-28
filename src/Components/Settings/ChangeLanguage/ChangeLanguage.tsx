@@ -18,7 +18,9 @@ function ChangeLanguage() {
             value: language,
           }
         })}
-        onValueChange={(language: LanguageEnum) => changeLanguage(language)}
+        onValueChange={(language: LanguageEnum) =>
+          changeLanguage(language || i18n.language)
+        }
         value={i18n.language}
       />
     </SafeAreaView>

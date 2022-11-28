@@ -34,7 +34,7 @@ export interface ISettings {
 
 interface IGameState {
   gameStatus: GameStatusEnum
-  gameMode: undefined | GameModeEnum
+  gameMode: GameModeEnum
   players: IPlayer[]
   category: undefined | ICategory
   settings: ISettings
@@ -42,7 +42,7 @@ interface IGameState {
 
 const gameInitialState: IGameState = {
   gameStatus: GameStatusEnum.GAME_MODE,
-  gameMode: undefined,
+  gameMode: GameModeEnum.EVE,
   players: [],
   category: undefined,
   settings: {

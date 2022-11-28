@@ -1,4 +1,8 @@
-import { KeyboardTypeOptions } from 'react-native'
+import {
+  KeyboardTypeOptions,
+  NativeSyntheticEvent,
+  TextInputSubmitEditingEventData,
+} from 'react-native'
 
 import styled from 'styled-components/native'
 
@@ -7,13 +11,18 @@ interface IStyledTextInput {
   keyboardType?: KeyboardTypeOptions
   value: string
   onChangeText: (string: string) => void
+  onSubmitEditing?:
+    | ((e: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void)
+    | undefined
 }
 
 function StyledTextInput(props: IStyledTextInput) {
-  const { placeholder, keyboardType, value, onChangeText } = props
+  const { placeholder, keyboardType, value, onChangeText, onSubmitEditing } =
+    props
 
   return (
     <TextInputWrapper
+      onSubmitEditing={onSubmitEditing}
       placeholder={placeholder}
       keyboardType={keyboardType}
       value={value}

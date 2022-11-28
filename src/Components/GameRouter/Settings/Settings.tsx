@@ -8,8 +8,9 @@ import wordsList from '../../../../assets/words/words.json'
 import { t } from '../../../i18n/config'
 import { GameStatusEnum, useGameStore } from '../../../stores/gameStore'
 import { useRoundStore } from '../../../stores/roundStore'
+import getNumberRounds from '../../../utils/getNumberRounds'
 import getRandomWords from '../../../utils/getRandomWords'
-import getRounds from '../../../utils/getRounds'
+import getRounds, { getRoundLength } from '../../../utils/getRounds'
 import StyledButton from '../../Atoms/StyledButton'
 import StyledText from '../../Atoms/StyledText'
 import StyledTextInput from '../../Atoms/StyledTextInput'
@@ -19,8 +20,11 @@ function Settings() {
     { settings, category, players, gameMode },
     { setGameStatus, setSettings },
   ] = useGameStore()
+
   const [, { setRounds }] = useRoundStore()
-  const [numberRounds, setNumberRounds] = useState(settings.rounds)
+  const [numberRounds, setNumberRounds] = useState(
+    getNumberRounds(getRoundLength(players.length, gameMode))
+  )
   const [timer, setTimer] = useState(settings.timer)
 
   const handleStart = () => {

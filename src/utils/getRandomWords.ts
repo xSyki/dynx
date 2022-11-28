@@ -1,5 +1,6 @@
 import { GameModeEnum, IPlayer } from '../stores/gameStore'
 import { IWord } from '../stores/roundStore'
+import { getRoundLength } from './getRounds'
 
 export default function getRandomWords(
   words: IWord[],
@@ -17,7 +18,7 @@ export default function getRandomWords(
     return selectedWords
   }
 
-  const numberOfWord = ((players.length * (players.length - 1)) / 2) * rounds
+  const numberOfWord = getRoundLength(players.length, GameModeEnum.EVE) * rounds
 
   const selectedWords = shuffledWords.slice(0, numberOfWord)
 

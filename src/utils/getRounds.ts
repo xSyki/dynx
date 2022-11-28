@@ -5,6 +5,14 @@ interface IPlayersRound {
   players: [IPlayer] | [IPlayer, IPlayer]
 }
 
+export function getRoundLength(playersLength: number, gameMode: GameModeEnum) {
+  if (gameMode === GameModeEnum.TEAMS) {
+    return playersLength
+  }
+
+  return (playersLength * (playersLength - 1)) / 2
+}
+
 function getRounds(
   players: IPlayer[],
   words: IWord[],
