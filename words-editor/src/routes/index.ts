@@ -13,7 +13,7 @@ router.get('/status', (req, res) => {
   })
 })
 
-router.use('/auth', categoriesRoute) //add routes
-router.use('/user', wordsRoute)
+router.use('/categories', categoriesRoute) //add routes
+router.use('/words', wordsRoute)
 
 export default router

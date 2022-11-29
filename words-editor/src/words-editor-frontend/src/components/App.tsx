@@ -1,24 +1,16 @@
-import reactLogo from '../assets/images/reactLogo.svg'
-import webPackLogo from '../assets/images/webPackLogo.png'
-
-import Counter from './Counter/Counter'
-
-import style from './app.module.scss'
+import { RouteEnum, useRouteStore } from '../stores/routeStore'
+import Categories from './Categories/Categories'
+import Layout from './Layout/Layout'
+import Words from './Words/Words'
 
 function App() {
+  const [{ route }] = useRouteStore()
+
   return (
-    <div className={style.app}>
-      <h1 className={style.app__title}>Hello WebPack!</h1>
-      <Counter />
-      <div className={style.app__logos}>
-        <a href="https://webpack.js.org">
-          <img src={webPackLogo} alt="" className={style.logo} />
-        </a>
-        <a href="https://reactjs.org">
-          <img src={reactLogo} alt="" className={style.logo} />
-        </a>
-      </div>
-    </div>
+    <Layout>
+      {route === RouteEnum.WORDS && <Words />}
+      {route === RouteEnum.CATEGORIES && <Categories />}
+    </Layout>
   )
 }
 
