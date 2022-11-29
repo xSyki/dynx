@@ -10,7 +10,8 @@
     "test": "jest --watchAll",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx,json}\"",
     "lint-fix": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "start-editor": "cd ./words-editor && npm run serve"
   },
   "jest": {
     "preset": "jest-expo"
