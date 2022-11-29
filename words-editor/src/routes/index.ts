@@ -1,7 +1,7 @@
 import express from 'express'
 
-import wordsRoute from './categoriesRoute'
-import categoriesRoute from './wordsRoute'
+import categoriesRoute from './categoriesRoute'
+import wordsRoute from './wordsRoute'
 
 const router = express.Router()
 

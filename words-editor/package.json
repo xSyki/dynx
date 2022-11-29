@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon ./src/app.ts",
-    "serve": "ts-node ./src/app.ts"
+    "serve": "cd ./src/words-editor-frontend && npm run build && cd .. && ts-node app.ts"
   },
   "author": "",
   "license": "ISC",
