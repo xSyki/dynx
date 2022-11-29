@@ -1,0 +1,240 @@
+[
+  {
+    "word": { "pl": "Auto", "en": "Car" },
+    "id": "0",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Miasto", "en": "City" },
+    "id": "1",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Sportowiec", "en": "Sportsman" },
+    "id": "2",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Drużyna sportowa", "en": "Sport team" },
+    "id": "6",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Gra komputerowa", "en": "Computer game" },
+    "id": "7",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Gatunek filmowy", "en": "Film genre" },
+    "id": "8",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Podzespół komputerowy", "en": "Computer component" },
+    "id": "9",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zwierze", "en": "Animal" },
+    "id": "10",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Materiał budowlany", "en": "Building material" },
+    "id": "11",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": {
+      "pl": "Kraj sąsiadujący z Polską",
+      "en": "A country bordering on Poland"
+    },
+    "id": "12",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Napój gazowany", "en": "Fizzy drink" },
+    "id": "13",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Aplikacja", "en": "App" },
+    "id": "14",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Social media", "en": "Social media" },
+    "id": "15",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Owoc", "en": "Fruit" },
+    "id": "16",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Warzywo", "en": "Vegetable" },
+    "id": "17",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Wódka", "en": "Vodka" },
+    "id": "3",
+    "categories": ["0", "2"]
+  },
+  {
+    "word": { "pl": "Drink", "en": "Drink" },
+    "id": "4",
+    "categories": ["0", "2"]
+  },
+  {
+    "word": { "pl": "Gwiazda porno", "en": "Porn star" },
+    "id": "5",
+    "categories": ["0", "2"]
+  },
+  {
+    "word": { "pl": "Zabawka dla dzieci", "en": "" },
+    "id": "18",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Konsola", "en": "" },
+    "id": "19",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Energetyk", "en": "" },
+    "id": "20",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Sport olimpijski", "en": "" },
+    "id": "21",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Sport ekstremalny", "en": "" },
+    "id": "22",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Dziewczyna", "en": "" },
+    "id": "23",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Youtuber", "en": "" },
+    "id": "23",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Influencer", "en": "" },
+    "id": "24",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Gwiazda filmowa", "en": "" },
+    "id": "25",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Serial", "en": "" },
+    "id": "26",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Film", "en": "" },
+    "id": "27",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Marka ubrań", "en": "" },
+    "id": "28",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Bochater Marvela", "en": "" },
+    "id": "29",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zawodnik sztuk walk", "en": "" },
+    "id": "30",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Kwiat", "en": "" },
+    "id": "31",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Jezioro", "en": "" },
+    "id": "32",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Morze", "en": "" },
+    "id": "32",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Kawa", "en": "" },
+    "id": "33",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Drzewo", "en": "" },
+    "id": "34",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Stacja paliw", "en": "" },
+    "id": "35",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Język programowania", "en": "" },
+    "id": "36",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Planeta", "en": "" },
+    "id": "36",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Galaktyka", "en": "" },
+    "id": "36",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zawód", "en": "" },
+    "id": "37",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Sklep", "en": "" },
+    "id": "38",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zawodnik F1", "en": "" },
+    "id": "39",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Piłkarz", "en": "" },
+    "id": "40",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Streamer", "en": "" },
+    "id": "41",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Grecki Bóg", "en": "" },
+    "id": "42",
+    "categories": ["0", "1"]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "0",
+    "name": { "pl": "Wszystkie", "en": "All" },
+    "image": "all.png"
+  },
+  {
+    "id": "1",
+    "name": { "pl": "Rodzinna", "en": "Family" },
+    "image": "family.png"
+  },
+  {
+    "id": "2",
+    "name": { "pl": "Impreza", "en": "Party" },
+    "image": "party.png"
+  }
+]

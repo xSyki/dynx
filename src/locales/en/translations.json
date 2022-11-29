@@ -1,0 +1,23 @@
+{
+  "game": "Game",
+  "your_words": "Your words",
+  "rules": "Rules",
+  "settings": "Settings",
+  "back": "Back",
+  "submit": "Submit",
+  "start": "Start",
+  "results": "Results",
+  "lost": "Lost",
+  "won": "Won",
+  "eve": "1vs1",
+  "teams": "Teams",
+  "name": "Name",
+  "add_new_player": "Add new player",
+  "game_mode": "Game mode",
+  "add_player": "Add player",
+  "add_teams": "Dodaj zespół",
+  "timer": "Timer",
+  "rounds": "Rounds",
+  "start_next_game": "Start next game",
+  "exit": "Exit"
+}
