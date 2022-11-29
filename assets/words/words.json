@@ -74,7 +74,7 @@
   },
   {
     "word": { "pl": "Warzywo", "en": "Vegetable" },
-    "id": "16",
+    "id": "17",
     "categories": ["0", "1"]
   },
   {
@@ -91,5 +91,150 @@
     "word": { "pl": "Gwiazda porno", "en": "Porn star" },
     "id": "5",
     "categories": ["0", "2"]
+  },
+  {
+    "word": { "pl": "Zabawka dla dzieci", "en": "" },
+    "id": "18",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Konsola", "en": "" },
+    "id": "19",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Energetyk", "en": "" },
+    "id": "20",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Sport olimpijski", "en": "" },
+    "id": "21",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Sport ekstremalny", "en": "" },
+    "id": "22",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Dziewczyna", "en": "" },
+    "id": "23",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Youtuber", "en": "" },
+    "id": "23",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Influencer", "en": "" },
+    "id": "24",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Gwiazda filmowa", "en": "" },
+    "id": "25",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Serial", "en": "" },
+    "id": "26",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Film", "en": "" },
+    "id": "27",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Marka ubrań", "en": "" },
+    "id": "28",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Bochater Marvela", "en": "" },
+    "id": "29",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zawodnik sztuk walk", "en": "" },
+    "id": "30",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Kwiat", "en": "" },
+    "id": "31",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Jezioro", "en": "" },
+    "id": "32",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Morze", "en": "" },
+    "id": "32",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Kawa", "en": "" },
+    "id": "33",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Drzewo", "en": "" },
+    "id": "34",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Stacja paliw", "en": "" },
+    "id": "35",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Język programowania", "en": "" },
+    "id": "36",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Planeta", "en": "" },
+    "id": "36",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Galaktyka", "en": "" },
+    "id": "36",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zawód", "en": "" },
+    "id": "37",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Sklep", "en": "" },
+    "id": "38",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Zawodnik F1", "en": "" },
+    "id": "39",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Piłkarz", "en": "" },
+    "id": "40",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Streamer", "en": "" },
+    "id": "41",
+    "categories": ["0", "1"]
+  },
+  {
+    "word": { "pl": "Grecki Bóg", "en": "" },
+    "id": "42",
+    "categories": ["0", "1"]
   }
 ]
