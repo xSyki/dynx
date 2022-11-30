@@ -1,16 +1,16 @@
 [
   {
-    "id": "0",
+    "id": "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
     "name": { "pl": "Wszystkie", "en": "All" },
     "image": "all.png"
   },
   {
-    "id": "1",
+    "id": "f31e4813-10b6-4b4f-8e54-1d604f34f680",
     "name": { "pl": "Rodzinna", "en": "Family" },
     "image": "family.png"
   },
   {
-    "id": "2",
+    "id": "d22a40b4-0571-4441-a28c-7e932173dc6c",
     "name": { "pl": "Impreza", "en": "Party" },
     "image": "party.png"
   }

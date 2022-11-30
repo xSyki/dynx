@@ -1,240 +1,519 @@
 [
   {
-    "word": { "pl": "Auto", "en": "Car" },
-    "id": "0",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Auto",
+      "en": "Car"
+    },
+    "id": "1890ec39-ded4-4d02-927b-732b78c98c7e",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Miasto", "en": "City" },
-    "id": "1",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Miasto",
+      "en": "City"
+    },
+    "id": "33de68fc-02ce-4dc3-a2cd-397a69bace16",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Sportowiec", "en": "Sportsman" },
-    "id": "2",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Sportowiec",
+      "en": "Sportsman"
+    },
+    "id": "3261704c-f9dc-43d9-9144-75c64ceb1c7a",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Drużyna sportowa", "en": "Sport team" },
-    "id": "6",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Drużyna sportowa",
+      "en": "Sport team"
+    },
+    "id": "824bfa21-c59e-4b97-9917-5074802e022f",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Gra komputerowa", "en": "Computer game" },
-    "id": "7",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Gra komputerowa",
+      "en": "Computer game"
+    },
+    "id": "272f12f8-55bd-405d-8a3c-0816e4a5acc4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Gatunek filmowy", "en": "Film genre" },
-    "id": "8",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Gatunek filmowy",
+      "en": "Film genre"
+    },
+    "id": "d0459771-e49c-483f-96da-6b8e7cc50da4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Podzespół komputerowy", "en": "Computer component" },
-    "id": "9",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Podzespół komputerowy",
+      "en": "Computer component"
+    },
+    "id": "31316a6a-3e1f-4fd7-a888-c3f73af13ece",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Zwierze", "en": "Animal" },
-    "id": "10",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zwierze",
+      "en": "Animal"
+    },
+    "id": "9ba84dfa-4024-4a32-92f5-49cf7204f54b",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Materiał budowlany", "en": "Building material" },
-    "id": "11",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Materiał budowlany",
+      "en": "Building material"
+    },
+    "id": "441a2895-6dee-4288-b42d-f4afdc9d42d3",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
     "word": {
       "pl": "Kraj sąsiadujący z Polską",
       "en": "A country bordering on Poland"
     },
-    "id": "12",
-    "categories": ["0", "1"]
+    "id": "6e7da047-b55a-4f33-9cab-75ed27ebe078",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Napój gazowany", "en": "Fizzy drink" },
-    "id": "13",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Napój gazowany",
+      "en": "Fizzy drink"
+    },
+    "id": "5df4fbd8-da0f-45d2-835c-136675fdcff7",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Aplikacja", "en": "App" },
-    "id": "14",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Aplikacja",
+      "en": "App"
+    },
+    "id": "5a69c9e0-04dd-4744-a171-3ea93d1bac84",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Social media", "en": "Social media" },
-    "id": "15",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Social media",
+      "en": "Social media"
+    },
+    "id": "9cad7359-c671-4d9b-b6b6-6003db832c07",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Owoc", "en": "Fruit" },
-    "id": "16",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Owoc",
+      "en": "Fruit"
+    },
+    "id": "43af4a8e-320a-42ef-81d9-d7fa8ef8fac8",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Warzywo", "en": "Vegetable" },
-    "id": "17",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Warzywo",
+      "en": "Vegetable"
+    },
+    "id": "2e9cbd7a-f0ac-4169-b5d3-c8df63e0f257",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Wódka", "en": "Vodka" },
-    "id": "3",
-    "categories": ["0", "2"]
+    "word": {
+      "pl": "Wódka",
+      "en": "Vodka"
+    },
+    "id": "002c0bde-9c64-4951-88ff-045f9ff704da",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Drink", "en": "Drink" },
-    "id": "4",
-    "categories": ["0", "2"]
+    "word": {
+      "pl": "Drink",
+      "en": "Drink"
+    },
+    "id": "23b72cd2-533d-48e5-a5bb-926e736140f7",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Gwiazda porno", "en": "Porn star" },
-    "id": "5",
-    "categories": ["0", "2"]
+    "word": {
+      "pl": "Gwiazda porno",
+      "en": "Porn star"
+    },
+    "id": "8ede89f3-1cf6-4274-b8d1-1bb4777bb6cd",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Zabawka dla dzieci", "en": "" },
-    "id": "18",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zabawka dla dzieci",
+      "en": ""
+    },
+    "id": "876cea85-9b3b-43ac-9b35-836ede1cc58e",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Konsola", "en": "" },
-    "id": "19",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Konsola",
+      "en": ""
+    },
+    "id": "515f3b8c-3eef-406f-99ff-30c769d29eee",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Energetyk", "en": "" },
-    "id": "20",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Energetyk",
+      "en": ""
+    },
+    "id": "9ac14b6b-becf-4428-9778-64c641286fbf",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Sport olimpijski", "en": "" },
-    "id": "21",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Sport olimpijski",
+      "en": ""
+    },
+    "id": "f70bfc90-438c-423b-81ba-ce137b0ca379",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Sport ekstremalny", "en": "" },
-    "id": "22",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Sport ekstremalny",
+      "en": ""
+    },
+    "id": "6a1efd2a-f6ae-449d-b0d2-cf33f0c390c0",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Dziewczyna", "en": "" },
-    "id": "23",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Dziewczyna",
+      "en": ""
+    },
+    "id": "5fe2172f-184d-44fe-96e4-03f807894f21",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Youtuber", "en": "" },
-    "id": "23",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Youtuber",
+      "en": ""
+    },
+    "id": "43029602-0ad6-470b-9db1-45d20833a679",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Influencer", "en": "" },
-    "id": "24",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Influencer",
+      "en": ""
+    },
+    "id": "84b09048-f221-46a9-ba7e-7628eb8a61af",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Gwiazda filmowa", "en": "" },
-    "id": "25",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Gwiazda filmowa",
+      "en": ""
+    },
+    "id": "02728170-a913-472d-b6f5-f8972ba8fd00",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Serial", "en": "" },
-    "id": "26",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Serial",
+      "en": ""
+    },
+    "id": "17f36fc5-a564-48d5-a6a5-8e2aea6f660c",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Film", "en": "" },
-    "id": "27",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Film",
+      "en": ""
+    },
+    "id": "d745a967-240e-43bf-adce-e98a53ebe132",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Marka ubrań", "en": "" },
-    "id": "28",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Marka ubrań",
+      "en": ""
+    },
+    "id": "d62746f2-a23a-45aa-83d8-887e9a98f420",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Bochater Marvela", "en": "" },
-    "id": "29",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Bochater Marvela",
+      "en": ""
+    },
+    "id": "7f69f425-522c-4d7c-ac5b-07bd509e78fa",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Zawodnik sztuk walk", "en": "" },
-    "id": "30",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zawodnik sztuk walk",
+      "en": ""
+    },
+    "id": "a0242803-e37b-4d27-8c04-69916018e1f4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Kwiat", "en": "" },
-    "id": "31",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Kwiat",
+      "en": ""
+    },
+    "id": "bc5db606-fb55-40da-811a-36c49fbcefb6",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Jezioro", "en": "" },
-    "id": "32",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Jezioro",
+      "en": ""
+    },
+    "id": "f14fc6dd-8185-4116-b348-4e42c1511f2e",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Morze", "en": "" },
-    "id": "32",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Morze",
+      "en": ""
+    },
+    "id": "f0339cf5-def9-4f9f-b194-6291c7b2c2e7",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Kawa", "en": "" },
-    "id": "33",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Kawa",
+      "en": ""
+    },
+    "id": "50054219-73fb-4ce8-9203-0e60fcc3a615",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Drzewo", "en": "" },
-    "id": "34",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Drzewo",
+      "en": ""
+    },
+    "id": "5db005b8-6751-40cc-8b2e-5eb5fbd580ba",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Stacja paliw", "en": "" },
-    "id": "35",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Stacja paliw",
+      "en": ""
+    },
+    "id": "fbb306db-bb75-41ee-91ce-7140ff4c6c19",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Język programowania", "en": "" },
-    "id": "36",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Język programowania",
+      "en": ""
+    },
+    "id": "6edce6b0-a14b-46eb-814c-ce5960b91947",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Planeta", "en": "" },
-    "id": "36",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Planeta",
+      "en": ""
+    },
+    "id": "b90cf52f-ed55-4c5e-bb3e-c6fb646610a3",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Galaktyka", "en": "" },
-    "id": "36",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Galaktyka",
+      "en": ""
+    },
+    "id": "dcc770eb-ef50-498d-ad83-9502b9a16be5",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Zawód", "en": "" },
-    "id": "37",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zawód",
+      "en": ""
+    },
+    "id": "f3f65bd3-9b90-4eaf-8830-f0d857d5b8f1",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Sklep", "en": "" },
-    "id": "38",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Sklep",
+      "en": ""
+    },
+    "id": "bc8ac6d2-7757-4875-84fd-e967b4be45be",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Zawodnik F1", "en": "" },
-    "id": "39",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zawodnik F1",
+      "en": ""
+    },
+    "id": "1d2055d5-ac17-488b-8e96-583c0bef3903",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Piłkarz", "en": "" },
-    "id": "40",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Piłkarz",
+      "en": ""
+    },
+    "id": "f4b9faff-c44a-4b12-a045-314ce34a842a",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Streamer", "en": "" },
-    "id": "41",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Streamer",
+      "en": ""
+    },
+    "id": "57f8a036-c791-4e5f-80c4-08e85b82b9e4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Grecki Bóg", "en": "" },
-    "id": "42",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Grecki Bóg",
+      "en": ""
+    },
+    "id": "b69c9737-47e4-4b44-896b-63e6c866ea06",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   }
 ]
