@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axiosMounted from './axios'
 
 export const getWords = (controller: AbortController) =>
-  axios.get('/words', { signal: controller.signal })
+  axiosMounted.get('/words', { signal: controller.signal })

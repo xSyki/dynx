@@ -1,3 +1,4 @@
+import cors from 'cors'
 import express from 'express'
 
 import routes from './routes/index'
@@ -6,7 +7,13 @@ const app = express()
 
 const DIST_DIR = `${__dirname}/words-editor-frontend/build`
 
-console.log(DIST_DIR)
+app.use(
+  cors({
+    origin: 'http://localhost:8080',
+    exposedHeaders: ['Content-Length', 'X-Foo', 'X-Bar'],
+    credentials: true,
+  })
+)
 
 app.use(express.static(DIST_DIR))
 

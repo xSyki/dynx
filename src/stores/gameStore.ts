@@ -24,7 +24,6 @@ export interface ICategory {
   id: string
   name: Record<LanguageEnum, string>
   image: string
-  file: string
 }
 
 export interface ISettings {
