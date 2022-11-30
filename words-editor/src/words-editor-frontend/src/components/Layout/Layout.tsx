@@ -13,8 +13,10 @@ function Layout(props: ILayoutProps) {
     <>
       <header>
         <nav>
-          <button onClick={() => setRoute(RouteEnum.WORDS)}></button>
-          <button onClick={() => setRoute(RouteEnum.CATEGORIES)}></button>
+          <button onClick={() => setRoute(RouteEnum.WORDS)}>Words</button>
+          <button onClick={() => setRoute(RouteEnum.CATEGORIES)}>
+            Categories
+          </button>
         </nav>
       </header>
       <main>{children}</main>

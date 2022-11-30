@@ -9,8 +9,6 @@ const router = express.Router()
 router.route('/').get((req, res) => {
   const words = JSON.parse(fs.readFileSync(env.words, 'utf8')) as IWord[]
 
-  console.log(env.words)
-
   res.json(words)
 })
 

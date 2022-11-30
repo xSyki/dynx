@@ -9,8 +9,6 @@ function Words() {
 
   useApiCall(getCategories, setCategories)
 
-  console.log(process.env.NODE_ENV)
-
   return (
     <div>
       <table>
@@ -25,7 +23,7 @@ function Words() {
         <tbody>
           <AddCategory />
           {categories.map((category) => (
-            <Category category={category} />
+            <Category key={category.id} category={category} />
           ))}
         </tbody>
       </table>

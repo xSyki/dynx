@@ -10,3 +10,6 @@ export const patchCategory = (category: ICategory) =>
 
 export const postCategory = (category: IEditingCategory) =>
   axiosMounted.post('/categories', category)
+
+export const deleteCategory = (id: string) =>
+  axiosMounted.delete(`/categories/${id}`)

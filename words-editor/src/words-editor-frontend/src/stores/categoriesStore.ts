@@ -1,6 +1,6 @@
 import { Action, createHook, createStore } from 'react-sweet-state'
 import { ICategory } from '../../../../../src/stores/gameStore'
-import { patchCategory, postCategory } from '../api/categories'
+import { deleteCategory, patchCategory, postCategory } from '../api/categories'
 
 export interface IEditingCategory {
   name: { pl: string; en: string }
@@ -29,19 +29,35 @@ const categoriesActions = {
 
       const categories = structuredClone(getState().categories)
 
-      setState({ categories: [{ id: categoryId, ...category }, ...categories] })
+      setState({ categories: [...categories, { id: categoryId, ...category }] })
     },
   patchCategory:
     (category: ICategory): Action<ICategoriesState> =>
-    async ({ setState, getState }) => {
+    ({ setState, getState }) => {
+      patchCategory(category)
+
       const categories = structuredClone(getState().categories)
 
       const categoryToEditIndex = categories.findIndex(
         (oldCategory) => oldCategory.id === category.id
       )
+
+      if (categoryToEditIndex === -1) return
+
       categories[categoryToEditIndex] = category
 
       setState({ categories })
+    },
+  deleteCategory:
+    (categoryId: string): Action<ICategoriesState> =>
+    ({ setState, getState }) => {
+      deleteCategory(categoryId)
+
+      const categories = structuredClone(getState().categories)
+
+      setState({
+        categories: categories.filter((category) => category.id !== categoryId),
+      })
     },
 }
 
