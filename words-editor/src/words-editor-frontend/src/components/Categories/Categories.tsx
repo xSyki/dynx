@@ -1,13 +1,9 @@
-import { getCategories } from '../../api/categories'
-import useApiCall from '../../hooks/useApiCall'
 import { useCategoriesStore } from '../../stores/categoriesStore'
 import AddCategory from './AddCategory/AddCategory'
 import Category from './Category/Category'
 
 function Words() {
-  const [{ categories }, { setCategories }] = useCategoriesStore()
-
-  useApiCall(getCategories, setCategories)
+  const [{ categories }] = useCategoriesStore()
 
   return (
     <div>
