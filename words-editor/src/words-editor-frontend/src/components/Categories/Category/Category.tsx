@@ -23,6 +23,8 @@ function Category(props: ICategoryProps) {
   }, [props.category])
 
   const handleSubmit = () => {
+    if (!category.image || !category.name.en || !category.name.pl) return
+
     setIsEditing(false)
     patchCategory(category)
   }

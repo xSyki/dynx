@@ -11,6 +11,8 @@ function AddCategory() {
   const [category, setCategory] = useState(initialCategory)
 
   const handleSubmit = () => {
+    if (!category.image || !category.name.en || !category.name.pl) return
+
     postCategory(category)
 
     setCategory(initialCategory)

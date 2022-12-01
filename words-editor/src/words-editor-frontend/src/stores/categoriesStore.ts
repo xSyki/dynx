@@ -24,12 +24,11 @@ const categoriesActions = {
   postCategory:
     (category: IEditingCategory): Action<ICategoriesState> =>
     async ({ setState, getState }) => {
-      console.log(category)
       const categoryId = await postCategory(category).then((res) => res.data)
 
       const categories = structuredClone(getState().categories)
 
-      setState({ categories: [...categories, { id: categoryId, ...category }] })
+      setState({ categories: [{ id: categoryId, ...category }, ...categories] })
     },
   patchCategory:
     (category: ICategory): Action<ICategoriesState> =>

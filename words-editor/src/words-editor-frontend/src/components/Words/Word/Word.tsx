@@ -9,6 +9,24 @@ interface IWordProps {
   word: IWord
 }
 
+const categoriesToOptions = (categories: ICategory[]): Option[] => {
+  return categories.map((category) => {
+    return {
+      label: category.name.en,
+      value: category.id,
+    }
+  })
+}
+
+const idsToOptions = (
+  categories: ICategory[],
+  categoriesId: string[]
+): Option[] => {
+  return categoriesToOptions(
+    categories.filter((category) => categoriesId.includes(category.id))
+  )
+}
+
 function Word(props: IWordProps) {
   const {
     id,
@@ -20,20 +38,13 @@ function Word(props: IWordProps) {
 
   const [isEditing, setIsEditing] = useState(false)
   const [word, setWord] = useState(props.word)
-  const [selectedCategories, setSelectedCategories] = useState<Option[]>([])
+  const [selectedCategories, setSelectedCategories] = useState<Option[]>(
+    idsToOptions(categories, props.word.categories)
+  )
 
   useEffect(() => {
     setWord({ ...props.word })
   }, [props.word])
-
-  const categoriesToOptions = (categories: ICategory[]): Option[] => {
-    return categories.map((category) => {
-      return {
-        label: category.name.en,
-        value: category.id,
-      }
-    })
-  }
 
   const handleCategoryChange = (value: Option[]) => {
     setSelectedCategories(value)
@@ -45,6 +56,8 @@ function Word(props: IWordProps) {
   }
 
   const handleSubmit = () => {
+    if (!word.categories.length || !word.word.en || !word.word.pl) return
+
     setIsEditing(false)
     patchWord(word)
   }

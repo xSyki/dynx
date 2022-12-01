@@ -30,7 +30,7 @@ const wordsActions = {
     async ({ setState, getState }) => {
       const newWordId = await postWord(word).then((res) => res.data)
 
-      setState({ words: [...getState().words, { id: newWordId, ...word }] })
+      setState({ words: [{ id: newWordId, ...word }, ...getState().words] })
     },
   patchWord:
     (word: IWord): Action<IWordsState> =>

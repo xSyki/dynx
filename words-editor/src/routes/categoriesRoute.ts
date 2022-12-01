@@ -52,7 +52,7 @@ router.route('/').post((req, res) => {
 
   fs.writeFileSync(
     env.categories,
-    JSON.stringify([...categories, newCategory], null, 2)
+    JSON.stringify([newCategory, ...categories], null, 2)
   )
 })
 

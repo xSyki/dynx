@@ -39,7 +39,8 @@ function AddWord() {
   }
 
   const handleSubmit = () => {
-    console.log(word)
+    if (!word.categories.length || !word.word.en || !word.word.pl) return
+    
     postWord(word)
 
     setWord(initialWord)
