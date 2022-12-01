@@ -1,5 +1,6 @@
-import { SafeAreaView } from 'react-native'
+import styled from 'styled-components/native'
 
+import images from '../../../../assets/images/images'
 import categories from '../../../../assets/words/categories.json'
 import i18n, { LanguageEnum } from '../../../i18n/config'
 import {
@@ -19,17 +20,29 @@ function Category() {
   }
 
   return (
-    <SafeAreaView>
+    <StyledCategory>
       <StyledText size="bg">Categories</StyledText>
-      {(categories as ICategory[]).map((category) => (
-        <StyledButton
-          onPress={() => handleChoseCategory(category)}
-          key={category.id}
-          title={category.name[i18n.language as LanguageEnum]}
-        />
-      ))}
-    </SafeAreaView>
+      <StyledButtons>
+        {(categories as ICategory[]).map((category) => (
+          <StyledButton
+            onPress={() => handleChoseCategory(category)}
+            key={category.id}
+            title={category.name[i18n.language as LanguageEnum]}
+            image={images.find((image) => image.name === category.image)?.image}
+          />
+        ))}
+      </StyledButtons>
+    </StyledCategory>
   )
 }
 
 export default Category
+
+const StyledCategory = styled.SafeAreaView`
+  height: 100%;
+`
+
+const StyledButtons = styled.ScrollView`
+  flex: 1;
+  height: 100%;
+`

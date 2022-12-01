@@ -64,7 +64,6 @@ function Category(props: ICategoryProps) {
                 }
                 value={category.name.pl}
               />
-              {pl}
             </div>
             <div>
               en:{' '}
@@ -78,7 +77,6 @@ function Category(props: ICategoryProps) {
                 }
                 value={category.name.en}
               />
-              {en}
             </div>
           </td>
           <td>
@@ -89,7 +87,6 @@ function Category(props: ICategoryProps) {
               }
               value={category.image}
             />
-            {image}
           </td>
           <td>
             <button onClick={handleSubmit}>Submit</button>
