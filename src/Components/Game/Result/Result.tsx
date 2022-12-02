@@ -30,8 +30,8 @@ function Result() {
 
   return (
     <SafeAreaView>
-      <StyledButton title={t('lost')} onPress={() => handlePlayersLost()} />
       <StyledButton title={t('won')} onPress={() => handlePlayersWon()} />
+      <StyledButton title={t('lost')} onPress={() => handlePlayersLost()} />
     </SafeAreaView>
   )
 }

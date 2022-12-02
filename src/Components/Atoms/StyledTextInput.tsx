@@ -1,6 +1,8 @@
+import { Ref } from 'react'
 import {
   KeyboardTypeOptions,
   NativeSyntheticEvent,
+  TextInput,
   TextInputSubmitEditingEventData,
 } from 'react-native'
 
@@ -14,14 +16,22 @@ interface IStyledTextInput {
   onSubmitEditing?:
     | ((e: NativeSyntheticEvent<TextInputSubmitEditingEventData>) => void)
     | undefined
+  ref?: Ref<TextInput>
 }
 
 function StyledTextInput(props: IStyledTextInput) {
-  const { placeholder, keyboardType, value, onChangeText, onSubmitEditing } =
-    props
+  const {
+    placeholder,
+    keyboardType,
+    value,
+    onChangeText,
+    onSubmitEditing,
+    ref,
+  } = props
 
   return (
     <TextInputWrapper
+      ref={ref}
       onSubmitEditing={onSubmitEditing}
       placeholder={placeholder}
       keyboardType={keyboardType}

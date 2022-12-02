@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components/native'
 import { v4 as uuidv4 } from 'uuid'
 
-import ThrashIcon from '../../../../assets/icons/trash.svg'
 import { t } from '../../../i18n/config'
 import {
   GameModeEnum,
@@ -13,7 +12,7 @@ import {
 } from '../../../stores/gameStore'
 import StyledButton from '../../Atoms/StyledButton'
 import StyledText from '../../Atoms/StyledText'
-import StyledTextInput from '../../Atoms/StyledTextInput'
+import Player from './Player.tsx/Player'
 
 function Players() {
   const [{ gameMode, players }, { setGameStatus, setPlayers }] = useGameStore()
@@ -53,23 +52,6 @@ function Players() {
     setTemporaryPlayers((players) => [...players, { id: uuidv4(), name: '' }])
   }
 
-  const editPlayerName = (id: string, name: string) => {
-    setTemporaryPlayers((players) => {
-      return players.map((player) => {
-        if (player.id === id) {
-          player.name = name
-        }
-        return player
-      })
-    })
-  }
-
-  const handleDeletePlayer = (id: string) => {
-    setTemporaryPlayers((players) => {
-      return players.filter((player) => player.id !== id)
-    })
-  }
-
   const canAddNewPlayer = () => {
     return (
       temporaryPlayers.length !== 0 &&
@@ -107,27 +89,13 @@ function Players() {
       )}
       <StyledPlayers>
         {temporaryPlayers.map((player, index) => (
-          <StyledPlayer key={player.id}>
-            <StyledText>{index + 1}.</StyledText>
-            <StyledTextInput
-              onSubmitEditing={() => handleAddNewPlayer()}
-              placeholder={t('name')}
-              value={
-                temporaryPlayers.find(
-                  (playerGeneral) => playerGeneral.id === player.id
-                )?.name || ''
-              }
-              onChangeText={(name) =>
-                editPlayerName(player.id, name.toUpperCase())
-              }
-            />
-            <StyledButton
-              size="sm"
-              onPress={() => handleDeletePlayer(player.id)}
-            >
-              <ThrashIcon height={20} width={20} fill="white" />
-            </StyledButton>
-          </StyledPlayer>
+          <Player
+            key={player.id}
+            player={player}
+            index={index}
+            handleAddNewPlayer={handleAddNewPlayer}
+            setTemporaryPlayers={setTemporaryPlayers}
+          />
         ))}
       </StyledPlayers>
       <StyledButton
@@ -152,12 +120,4 @@ const StyledAddPlayers = styled.SafeAreaView`
 
 const StyledPlayers = styled.ScrollView`
   flex-grow: 1;
-`
-
-const StyledPlayer = styled.SafeAreaView`
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
 `
