@@ -13,7 +13,8 @@ function Category(props: ICategoryProps) {
     image,
   } = props.category
 
-  const [, { patchCategory, deleteCategory }] = useCategoriesStore()
+  const [, { patchCategory, deleteCategory, changeCategoryId }] =
+    useCategoriesStore()
 
   const [isEditing, setIsEditing] = useState(false)
   const [category, setCategory] = useState(props.category)
@@ -27,6 +28,10 @@ function Category(props: ICategoryProps) {
 
     setIsEditing(false)
     patchCategory(category)
+  }
+
+  const handleChangeId = () => {
+    changeCategoryId(id)
   }
 
   const handleDelete = () => {
@@ -44,6 +49,7 @@ function Category(props: ICategoryProps) {
           </td>
           <td>{image}</td>
           <td>
+            <button onClick={handleChangeId}>Regenerate Id</button>
             <button onClick={() => setIsEditing(true)}>Edit</button>
             <button onClick={handleDelete}>Delete</button>
           </td>

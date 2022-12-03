@@ -56,6 +56,28 @@ router.route('/').post((req, res) => {
   )
 })
 
+router.route('/id/:categoryId').patch((req, res) => {
+  const categoryId = req.params.categoryId
+
+  const categories = JSON.parse(
+    fs.readFileSync(env.categories, 'utf8')
+  ) as ICategory[]
+
+  const newCategoryId = uuid()
+
+  const categoryToEditIndex = categories.findIndex(
+    (oldCategory) => oldCategory.id === categoryId
+  )
+
+  if (categoryToEditIndex === -1) return
+
+  categories[categoryToEditIndex].id = newCategoryId
+
+  fs.writeFileSync(env.categories, JSON.stringify(categories, null, 2))
+
+  res.json(categoryId)
+})
+
 router.route('/:categoryId').delete((req, res) => {
   const categoryId = req.params.categoryId
 
