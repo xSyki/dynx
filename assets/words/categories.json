@@ -22,5 +22,53 @@
       "en": "Party"
     },
     "image": "party.png"
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Travel",
+      "pl": "Podróże"
+    },
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Food",
+      "pl": "Jedzenie"
+    },
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Sports",
+      "pl": "Sport"
+    },
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Books and Movies",
+      "pl": "Książki i filmy"
+    },
+    "image": ""
+  },
+  {
+    "id": 8,
+    "name": {
+      "en": "Famous People",
+      "pl": "Sławni ludzie"
+    },
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": {
+      "en": "Art and Music",
+      "pl": "Sztuka i muzyka"
+    },
+    "image": ""
   }
 ]
