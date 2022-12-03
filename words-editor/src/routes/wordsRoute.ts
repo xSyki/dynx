@@ -59,4 +59,35 @@ router.route('/:wordId').delete((req, res) => {
   )
 })
 
+router.route('/id/:wordId').patch((req, res) => {
+  const wordId = req.params.wordId
+
+  console.log(wordId)
+
+  const words = JSON.parse(fs.readFileSync(env.words, 'utf8')) as IWord[]
+
+  const newWordId = uuid()
+
+  const categoryToEditIndex = words.findIndex(
+    (oldWords) => oldWords.id === wordId
+  )
+
+  if (categoryToEditIndex === -1) return
+
+  words[categoryToEditIndex].id = newWordId
+
+  fs.writeFileSync(env.words, JSON.stringify(words, null, 2))
+
+  fs.writeFileSync(
+    env.words,
+    JSON.stringify(
+      words.filter((word) => word.id !== wordId),
+      null,
+      2
+    )
+  )
+
+  res.json(newWordId)
+})
+
 export default router

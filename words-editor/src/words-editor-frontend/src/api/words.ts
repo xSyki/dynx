@@ -11,3 +11,6 @@ export const postWord = (word: INewWord) =>
 export const patchWord = (word: IWord) => axiosMounted.patch('/words', word)
 
 export const deleteWord = (id: string) => axiosMounted.delete(`/words/${id}`)
+
+export const patchWordId = (id: string) =>
+  axiosMounted.patch<string>(`/words/id/${id}`)

@@ -34,7 +34,7 @@ function Word(props: IWordProps) {
   } = props.word
 
   const [{ categories }] = useCategoriesStore()
-  const [, { patchWord, deleteWord }] = useWordsStore()
+  const [, { patchWord, deleteWord, changeWordId }] = useWordsStore()
 
   const [isEditing, setIsEditing] = useState(false)
   const [word, setWord] = useState(props.word)
@@ -53,6 +53,10 @@ function Word(props: IWordProps) {
 
   const optionsToCategories = (options: Option[]) => {
     return options.map((option) => option.value)
+  }
+
+  const handleGenerateId = () => {
+    changeWordId(id)
   }
 
   const handleSubmit = () => {
@@ -82,6 +86,7 @@ function Word(props: IWordProps) {
               .join(', ')}
           </td>
           <td>
+            <button onClick={handleGenerateId}>Generate new id</button>
             <button onClick={() => setIsEditing(true)}>Edit</button>
             <button onClick={handleDelete}>Delete</button>
           </td>

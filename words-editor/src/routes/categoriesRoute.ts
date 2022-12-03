@@ -56,6 +56,41 @@ router.route('/').post((req, res) => {
   )
 })
 
+router.route('/:categoryId').delete((req, res) => {
+  const categoryId = req.params.categoryId
+
+  const categories = JSON.parse(
+    fs.readFileSync(env.categories, 'utf8')
+  ) as ICategory[]
+
+  fs.writeFileSync(
+    env.categories,
+    JSON.stringify(
+      categories.filter((category) => category.id !== categoryId),
+      null,
+      2
+    )
+  )
+
+  const words = JSON.parse(fs.readFileSync(env.words, 'utf8')) as IWord[]
+
+  fs.writeFileSync(
+    env.words,
+    JSON.stringify(
+      words.map((word) => {
+        return {
+          ...word,
+          categories: word.categories.filter(
+            (category) => category !== categoryId
+          ),
+        }
+      }),
+      null,
+      2
+    )
+  )
+})
+
 router.route('/id/:categoryId').patch((req, res) => {
   const categoryId = req.params.categoryId
 
@@ -90,41 +125,6 @@ router.route('/id/:categoryId').patch((req, res) => {
   fs.writeFileSync(env.words, JSON.stringify(words, null, 2))
 
   res.json(newCategoryId)
-})
-
-router.route('/:categoryId').delete((req, res) => {
-  const categoryId = req.params.categoryId
-
-  const categories = JSON.parse(
-    fs.readFileSync(env.categories, 'utf8')
-  ) as ICategory[]
-
-  fs.writeFileSync(
-    env.categories,
-    JSON.stringify(
-      categories.filter((category) => category.id !== categoryId),
-      null,
-      2
-    )
-  )
-
-  const words = JSON.parse(fs.readFileSync(env.words, 'utf8')) as IWord[]
-
-  fs.writeFileSync(
-    env.words,
-    JSON.stringify(
-      words.map((word) => {
-        return {
-          ...word,
-          categories: word.categories.filter(
-            (category) => category !== categoryId
-          ),
-        }
-      }),
-      null,
-      2
-    )
-  )
 })
 
 export default router

@@ -1,7 +1,7 @@
 import { Action, createHook, createStore } from 'react-sweet-state'
 
 import { IWord } from '../../../../../src/stores/roundStore'
-import { deleteWord, patchWord, postWord } from '../api/words'
+import { deleteWord, patchWord, patchWordId, postWord } from '../api/words'
 
 export interface INewWord {
   categories: string[]
@@ -59,6 +59,21 @@ const wordsActions = {
       setState({
         words: categories.filter((word) => word.id !== wordId),
       })
+    },
+  changeWordId:
+    (wordId: string): Action<IWordsState> =>
+    async ({ setState, getState }) => {
+      const newWordId = await patchWordId(wordId).then((res) => res.data)
+
+      const words = structuredClone(getState().words)
+
+      const wordIndex = words.findIndex((word) => word.id === wordId)
+
+      if (wordIndex === -1) return
+
+      words[wordIndex].id = newWordId
+
+      setState({ words })
     },
 }
 
