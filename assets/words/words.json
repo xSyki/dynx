@@ -322,7 +322,7 @@
   {
     "word": {
       "pl": "Influencer",
-      "en": ""
+      "en": "Influencer"
     },
     "id": "84b09048-f221-46a9-ba7e-7628eb8a61af",
     "categories": [
@@ -333,7 +333,7 @@
   {
     "word": {
       "pl": "Gwiazda filmowa",
-      "en": ""
+      "en": "Movie start"
     },
     "id": "02728170-a913-472d-b6f5-f8972ba8fd00",
     "categories": [
@@ -344,7 +344,7 @@
   {
     "word": {
       "pl": "Serial",
-      "en": ""
+      "en": "Series"
     },
     "id": "17f36fc5-a564-48d5-a6a5-8e2aea6f660c",
     "categories": [
@@ -355,7 +355,7 @@
   {
     "word": {
       "pl": "Film",
-      "en": ""
+      "en": "Movie"
     },
     "id": "d745a967-240e-43bf-adce-e98a53ebe132",
     "categories": [
@@ -377,7 +377,7 @@
   {
     "word": {
       "pl": "Bochater Marvela",
-      "en": ""
+      "en": "Marvel hero"
     },
     "id": "7f69f425-522c-4d7c-ac5b-07bd509e78fa",
     "categories": [
@@ -399,7 +399,7 @@
   {
     "word": {
       "pl": "Kwiat",
-      "en": ""
+      "en": "Flower"
     },
     "id": "bc5db606-fb55-40da-811a-36c49fbcefb6",
     "categories": [
@@ -410,7 +410,7 @@
   {
     "word": {
       "pl": "Jezioro",
-      "en": ""
+      "en": "Lake"
     },
     "id": "f14fc6dd-8185-4116-b348-4e42c1511f2e",
     "categories": [
@@ -421,7 +421,7 @@
   {
     "word": {
       "pl": "Morze",
-      "en": ""
+      "en": "Sea"
     },
     "id": "f0339cf5-def9-4f9f-b194-6291c7b2c2e7",
     "categories": [
@@ -432,7 +432,7 @@
   {
     "word": {
       "pl": "Kawa",
-      "en": ""
+      "en": "Coffe"
     },
     "id": "50054219-73fb-4ce8-9203-0e60fcc3a615",
     "categories": [
@@ -443,7 +443,7 @@
   {
     "word": {
       "pl": "Drzewo",
-      "en": ""
+      "en": "Tree"
     },
     "id": "5db005b8-6751-40cc-8b2e-5eb5fbd580ba",
     "categories": [
@@ -454,7 +454,7 @@
   {
     "word": {
       "pl": "Stacja paliw",
-      "en": ""
+      "en": "Petrol station"
     },
     "id": "fbb306db-bb75-41ee-91ce-7140ff4c6c19",
     "categories": [
@@ -465,7 +465,7 @@
   {
     "word": {
       "pl": "Język programowania",
-      "en": ""
+      "en": "Programming language"
     },
     "id": "6edce6b0-a14b-46eb-814c-ce5960b91947",
     "categories": [
@@ -476,7 +476,7 @@
   {
     "word": {
       "pl": "Planeta",
-      "en": ""
+      "en": "Planet"
     },
     "id": "b90cf52f-ed55-4c5e-bb3e-c6fb646610a3",
     "categories": [
@@ -487,7 +487,7 @@
   {
     "word": {
       "pl": "Galaktyka",
-      "en": ""
+      "en": "Galaxy"
     },
     "id": "dcc770eb-ef50-498d-ad83-9502b9a16be5",
     "categories": [
@@ -498,7 +498,7 @@
   {
     "word": {
       "pl": "Zawód",
-      "en": ""
+      "en": "Vacation"
     },
     "id": "f3f65bd3-9b90-4eaf-8830-f0d857d5b8f1",
     "categories": [
@@ -520,7 +520,7 @@
   {
     "word": {
       "pl": "Zawodnik F1",
-      "en": ""
+      "en": "F1 racer"
     },
     "id": "1d2055d5-ac17-488b-8e96-583c0bef3903",
     "categories": [
@@ -531,7 +531,7 @@
   {
     "word": {
       "pl": "Piłkarz",
-      "en": ""
+      "en": "Footballer"
     },
     "id": "f4b9faff-c44a-4b12-a045-314ce34a842a",
     "categories": [
@@ -553,7 +553,7 @@
   {
     "word": {
       "pl": "Grecki Bóg",
-      "en": ""
+      "en": "Greece God"
     },
     "id": "b69c9737-47e4-4b44-896b-63e6c866ea06",
     "categories": [

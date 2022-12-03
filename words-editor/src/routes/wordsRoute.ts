@@ -62,8 +62,6 @@ router.route('/:wordId').delete((req, res) => {
 router.route('/id/:wordId').patch((req, res) => {
   const wordId = req.params.wordId
 
-  console.log(wordId)
-
   const words = JSON.parse(fs.readFileSync(env.words, 'utf8')) as IWord[]
 
   const newWordId = uuid()
