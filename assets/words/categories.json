@@ -24,7 +24,7 @@
     "image": "party.png"
   },
   {
-    "id": 3,
+    "id": "ce469fd4-afcf-46f3-9177-5647ae646da1",
     "name": {
       "en": "Travel",
       "pl": "Podróże"
@@ -32,7 +32,7 @@
     "image": ""
   },
   {
-    "id": 4,
+    "id": "f20f0ea8-d349-4e48-840d-f64b2e35fb12",
     "name": {
       "en": "Food",
       "pl": "Jedzenie"
@@ -40,7 +40,7 @@
     "image": ""
   },
   {
-    "id": 6,
+    "id": "147144ff-b6e5-4cd1-8936-5fd26e23338f",
     "name": {
       "en": "Sports",
       "pl": "Sport"
@@ -48,7 +48,7 @@
     "image": ""
   },
   {
-    "id": 7,
+    "id": "91f52b53-1d82-4d32-aac6-4efe481e161d",
     "name": {
       "en": "Books and Movies",
       "pl": "Książki i filmy"
@@ -56,7 +56,7 @@
     "image": ""
   },
   {
-    "id": 8,
+    "id": "c2da8aa0-698e-46e2-bdf8-26eeee6fc230",
     "name": {
       "en": "Famous People",
       "pl": "Sławni ludzie"
@@ -64,7 +64,7 @@
     "image": ""
   },
   {
-    "id": 9,
+    "id": "df0455ba-1f41-4096-bdd8-d4da2fc5878c",
     "name": {
       "en": "Art and Music",
       "pl": "Sztuka i muzyka"

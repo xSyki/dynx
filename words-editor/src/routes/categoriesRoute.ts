@@ -75,7 +75,21 @@ router.route('/id/:categoryId').patch((req, res) => {
 
   fs.writeFileSync(env.categories, JSON.stringify(categories, null, 2))
 
-  res.json(categoryId)
+  const words = JSON.parse(fs.readFileSync(env.words, 'utf8')) as IWord[]
+
+  words.forEach((word) => {
+    const categoryIdIndex = word.categories.findIndex(
+      (category) => category === categoryId
+    )
+
+    if (categoryIdIndex === -1) return
+
+    word.categories[categoryIdIndex] = newCategoryId
+  })
+
+  fs.writeFileSync(env.words, JSON.stringify(words, null, 2))
+
+  res.json(newCategoryId)
 })
 
 router.route('/:categoryId').delete((req, res) => {
