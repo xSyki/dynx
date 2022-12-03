@@ -39,7 +39,6 @@ function AddCategory() {
             }
             value={category.name.pl}
           />
-          {pl}
         </div>
         <div>
           en:{' '}
@@ -53,7 +52,6 @@ function AddCategory() {
             }
             value={category.name.en}
           />
-          {en}
         </div>
       </td>
       <td>

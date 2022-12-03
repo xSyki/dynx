@@ -1,5 +1,13 @@
 [
   {
+    "id": "16717e58-7333-4ec2-a7eb-769e389daad8",
+    "name": {
+      "en": "Knowledge",
+      "pl": "Wiedza"
+    },
+    "image": "knowledge.png"
+  },
+  {
     "id": "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
     "name": {
       "pl": "Wszystkie",
