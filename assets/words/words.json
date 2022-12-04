@@ -670,5 +670,49 @@
       "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
       "16717e58-7333-4ec2-a7eb-769e389daad8"
     ]
+  },
+  {
+    "id": "12",
+    "word": {
+      "en": "What is the longest road in the world?",
+      "pl": "Jaka jest najdłuższa droga na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
+  },
+  {
+    "id": "13",
+    "word": {
+      "en": "What is the deepest ocean trench in the world?",
+      "pl": "Jaka jest najgłębsza wśród oceanicznych wąwozów na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
+  },
+  {
+    "id": "14",
+    "word": {
+      "en": "What is the highest volcano in the world?",
+      "pl": "Jaki jest najwyższy wulkan na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
+  },
+  {
+    "id": "15",
+    "word": {
+      "en": "What is the largest country in the world?",
+      "pl": "Jaki jest największy kraj na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
   }
 ]
