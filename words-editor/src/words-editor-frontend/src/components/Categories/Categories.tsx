@@ -10,16 +10,18 @@ function Words() {
       <table>
         <thead>
           <tr>
+            <th>index</th>
             <th>id</th>
             <th>name</th>
             <th>image</th>
+            <th>words</th>
             <th>buttons</th>
           </tr>
         </thead>
         <tbody>
           <AddCategory />
-          {categories.map((category) => (
-            <Category key={category.id} category={category} />
+          {categories.map((category, index) => (
+            <Category key={category.id} category={category} index={index} />
           ))}
         </tbody>
       </table>

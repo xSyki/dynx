@@ -28,5 +28,5 @@ app.use('/', routes)
 const port = 3001
 
 app.listen(port, function () {
-  console.log(`Listening on port ${port}...`)
+  console.log(`Listening on http://localhost:${port}`)
 })

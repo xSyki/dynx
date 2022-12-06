@@ -10,6 +10,7 @@ function Words() {
       <table>
         <thead>
           <tr>
+            <th>index</th>
             <th>id</th>
             <th>name</th>
             <th>categories</th>
@@ -18,8 +19,8 @@ function Words() {
         </thead>
         <tbody>
           <AddWord />
-          {words.map((word) => (
-            <Word key={word.id} word={word} />
+          {words.map((word, index) => (
+            <Word key={word.id} word={word} index={index} />
           ))}
         </tbody>
       </table>

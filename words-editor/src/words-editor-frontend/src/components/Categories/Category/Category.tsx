@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react'
 import { ICategory } from '../../../../../../../src/stores/gameStore'
 import { useCategoriesStore } from '../../../stores/categoriesStore'
+import { useWordsStore } from '../../../stores/wordsStore'
 
 interface ICategoryProps {
   category: ICategory
+  index: number
 }
 
 function Category(props: ICategoryProps) {
+  const { index } = props
   const {
     id,
     name: { pl, en },
@@ -15,6 +18,7 @@ function Category(props: ICategoryProps) {
 
   const [, { patchCategory, deleteCategory, changeCategoryId }] =
     useCategoriesStore()
+  const [{ words }] = useWordsStore()
 
   const [isEditing, setIsEditing] = useState(false)
   const [category, setCategory] = useState(props.category)
@@ -38,16 +42,22 @@ function Category(props: ICategoryProps) {
     deleteCategory(id)
   }
 
+  const wordsNumber = words.filter((word) =>
+    word.categories.includes(category.id)
+  ).length
+
   return (
     <tr>
       {!isEditing ? (
         <>
+          <td>{index + 1}</td>
           <td>{id}</td>
           <td>
             <div>pl: {pl}</div>
             <div>en: {en}</div>
           </td>
           <td>{image}</td>
+          <td>{wordsNumber}</td>
           <td>
             <button onClick={handleChangeId}>Regenerate Id</button>
             <button onClick={() => setIsEditing(true)}>Edit</button>
@@ -56,6 +66,7 @@ function Category(props: ICategoryProps) {
         </>
       ) : (
         <>
+          <td>{index + 1}</td>
           <td>{id}</td>
           <td>
             <div>
@@ -94,6 +105,7 @@ function Category(props: ICategoryProps) {
               value={category.image}
             />
           </td>
+          <td>{wordsNumber}</td>
           <td>
             <button onClick={handleSubmit}>Submit</button>
           </td>

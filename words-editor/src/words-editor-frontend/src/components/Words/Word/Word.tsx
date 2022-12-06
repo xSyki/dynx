@@ -7,6 +7,7 @@ import { ICategory } from '../../../../../../../src/stores/gameStore'
 
 interface IWordProps {
   word: IWord
+  index: number
 }
 
 const categoriesToOptions = (categories: ICategory[]): Option[] => {
@@ -28,6 +29,7 @@ const idsToOptions = (
 }
 
 function Word(props: IWordProps) {
+  const { index } = props
   const {
     id,
     word: { pl, en },
@@ -74,6 +76,7 @@ function Word(props: IWordProps) {
     <tr>
       {!isEditing ? (
         <>
+          <td>{index + 1}</td>
           <td>{id}</td>
           <td>
             <div>pl: {pl}</div>
@@ -93,6 +96,7 @@ function Word(props: IWordProps) {
         </>
       ) : (
         <>
+          <td>{index + 1}</td>
           <td>{id}</td>
           <td>
             <div>
