@@ -1,17 +1,58 @@
 [
   {
-    "id": "0",
-    "name": { "pl": "Wszystkie", "en": "All" },
+    "id": "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+    "name": {
+      "pl": "Wszystkie",
+      "en": "All"
+    },
     "image": "all.png"
   },
   {
-    "id": "1",
-    "name": { "pl": "Rodzinna", "en": "Family" },
+    "id": "16717e58-7333-4ec2-a7eb-769e389daad8",
+    "name": {
+      "en": "Knowledge",
+      "pl": "Wiedza"
+    },
+    "image": "knowledge.png"
+  },
+  {
+    "id": "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+    "name": {
+      "pl": "Rodzina",
+      "en": "Family"
+    },
     "image": "family.png"
   },
   {
-    "id": "2",
-    "name": { "pl": "Impreza", "en": "Party" },
+    "id": "d22a40b4-0571-4441-a28c-7e932173dc6c",
+    "name": {
+      "pl": "Impreza",
+      "en": "Party"
+    },
     "image": "party.png"
+  },
+  {
+    "id": "ce469fd4-afcf-46f3-9177-5647ae646da1",
+    "name": {
+      "en": "Travel",
+      "pl": "Podróże"
+    },
+    "image": ""
+  },
+  {
+    "id": "f20f0ea8-d349-4e48-840d-f64b2e35fb12",
+    "name": {
+      "en": "Food",
+      "pl": "Jedzenie"
+    },
+    "image": ""
+  },
+  {
+    "id": "147144ff-b6e5-4cd1-8936-5fd26e23338f",
+    "name": {
+      "en": "Sports",
+      "pl": "Sport"
+    },
+    "image": ""
   }
 ]

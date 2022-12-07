@@ -1,240 +1,843 @@
 [
   {
-    "word": { "pl": "Auto", "en": "Car" },
-    "id": "0",
-    "categories": ["0", "1"]
+    "id": "d7162aba-d0a9-43b2-b5ef-b0fcf175c887",
+    "word": {
+      "en": "Theme party",
+      "pl": "Impreza tematyczna"
+    },
+    "categories": [
+      "d22a40b4-0571-4441-a28c-7e932173dc6c",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f"
+    ]
   },
   {
-    "word": { "pl": "Miasto", "en": "City" },
-    "id": "1",
-    "categories": ["0", "1"]
+    "id": "aec13f28-2531-4ce2-8120-bffd0c3e8a17",
+    "word": {
+      "en": "Author of books",
+      "pl": "Autor książek"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Sportowiec", "en": "Sportsman" },
-    "id": "2",
-    "categories": ["0", "1"]
+    "id": "5a250f59-f4de-4155-9cf7-953812e6f8cb",
+    "word": {
+      "en": "Website",
+      "pl": "Strona internetowa"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Drużyna sportowa", "en": "Sport team" },
-    "id": "6",
-    "categories": ["0", "1"]
+    "id": "5e14522c-5881-4cfc-896b-7de3fbac7a47",
+    "word": {
+      "en": "Vodka snack",
+      "pl": "Zagryzka"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c",
+      "f20f0ea8-d349-4e48-840d-f64b2e35fb12"
+    ]
   },
   {
-    "word": { "pl": "Gra komputerowa", "en": "Computer game" },
-    "id": "7",
-    "categories": ["0", "1"]
+    "id": "3d8acb90-ec81-4db3-ae0a-fc1123dd45e8",
+    "word": {
+      "en": "Pizza sauce",
+      "pl": "Sos do pizzy"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "f20f0ea8-d349-4e48-840d-f64b2e35fb12"
+    ]
   },
   {
-    "word": { "pl": "Gatunek filmowy", "en": "Film genre" },
-    "id": "8",
-    "categories": ["0", "1"]
+    "id": "48ecfdd7-8386-4e5a-9a92-6a6ab297c385",
+    "word": {
+      "en": "Party game",
+      "pl": "Gra imprezowa"
+    },
+    "categories": [
+      "d22a40b4-0571-4441-a28c-7e932173dc6c",
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f"
+    ]
   },
   {
-    "word": { "pl": "Podzespół komputerowy", "en": "Computer component" },
-    "id": "9",
-    "categories": ["0", "1"]
+    "id": "e779ddf8-c928-4be3-b391-4a05dbec8def",
+    "word": {
+      "en": "How much alcohol will you drink?",
+      "pl": "Ile alkoholu wypijesz?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Zwierze", "en": "Animal" },
-    "id": "10",
-    "categories": ["0", "1"]
+    "id": "83822a50-2ba9-4953-b56e-3bd329e35e46",
+    "word": {
+      "en": "Mathematician",
+      "pl": "Matematyk"
+    },
+    "categories": [
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f"
+    ]
   },
   {
-    "word": { "pl": "Materiał budowlany", "en": "Building material" },
-    "id": "11",
-    "categories": ["0", "1"]
+    "id": "76cae4fb-2df9-4b0f-920a-c6047208cad0",
+    "word": {
+      "en": "Body part",
+      "pl": "Część ciała"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
+  },
+  {
+    "id": "e4413766-4194-4352-8122-bd30e31d51c9",
+    "word": {
+      "en": "Soccer club",
+      "pl": "Klub piłkarski"
+    },
+    "categories": [
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f"
+    ]
+  },
+  {
+    "id": "a2580a2a-d464-4e06-b1bb-bcfc636f0ea6",
+    "word": {
+      "en": "Musical instrument",
+      "pl": "Instrument muzyczny"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "id": "eb6654f3-11b3-4f8b-80eb-d93d66325a42",
+    "word": {
+      "en": "Plastic surgery",
+      "pl": "Operacja plastyczna"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Auto",
+      "en": "Car"
+    },
+    "id": "1890ec39-ded4-4d02-927b-732b78c98c7e",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Miasto",
+      "en": "City"
+    },
+    "id": "33de68fc-02ce-4dc3-a2cd-397a69bace16",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Sportowiec",
+      "en": "Sportsman"
+    },
+    "id": "3261704c-f9dc-43d9-9144-75c64ceb1c7a",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Drużyna sportowa",
+      "en": "Sport team"
+    },
+    "id": "824bfa21-c59e-4b97-9917-5074802e022f",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Gra komputerowa",
+      "en": "Computer game"
+    },
+    "id": "272f12f8-55bd-405d-8a3c-0816e4a5acc4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Gatunek filmowy",
+      "en": "Film genre"
+    },
+    "id": "d0459771-e49c-483f-96da-6b8e7cc50da4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Podzespół komputerowy",
+      "en": "Computer component"
+    },
+    "id": "31316a6a-3e1f-4fd7-a888-c3f73af13ece",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Zwierze",
+      "en": "Animal"
+    },
+    "id": "9ba84dfa-4024-4a32-92f5-49cf7204f54b",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "word": {
+      "pl": "Materiał budowlany",
+      "en": "Building material"
+    },
+    "id": "441a2895-6dee-4288-b42d-f4afdc9d42d3",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
     "word": {
       "pl": "Kraj sąsiadujący z Polską",
       "en": "A country bordering on Poland"
     },
-    "id": "12",
-    "categories": ["0", "1"]
+    "id": "6e7da047-b55a-4f33-9cab-75ed27ebe078",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
   },
   {
-    "word": { "pl": "Napój gazowany", "en": "Fizzy drink" },
-    "id": "13",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Napój gazowany",
+      "en": "Fizzy drink"
+    },
+    "id": "5df4fbd8-da0f-45d2-835c-136675fdcff7",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "f20f0ea8-d349-4e48-840d-f64b2e35fb12",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Aplikacja", "en": "App" },
-    "id": "14",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Aplikacja",
+      "en": "App"
+    },
+    "id": "5a69c9e0-04dd-4744-a171-3ea93d1bac84",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Social media", "en": "Social media" },
-    "id": "15",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Social media",
+      "en": "Social media"
+    },
+    "id": "9cad7359-c671-4d9b-b6b6-6003db832c07",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Owoc", "en": "Fruit" },
-    "id": "16",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Owoc",
+      "en": "Fruit"
+    },
+    "id": "43af4a8e-320a-42ef-81d9-d7fa8ef8fac8",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Warzywo", "en": "Vegetable" },
-    "id": "17",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Warzywo",
+      "en": "Vegetable"
+    },
+    "id": "2e9cbd7a-f0ac-4169-b5d3-c8df63e0f257",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Wódka", "en": "Vodka" },
-    "id": "3",
-    "categories": ["0", "2"]
+    "word": {
+      "pl": "Wódka",
+      "en": "Vodka"
+    },
+    "id": "002c0bde-9c64-4951-88ff-045f9ff704da",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Drink", "en": "Drink" },
-    "id": "4",
-    "categories": ["0", "2"]
+    "word": {
+      "pl": "Drink",
+      "en": "Drink"
+    },
+    "id": "23b72cd2-533d-48e5-a5bb-926e736140f7",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Gwiazda porno", "en": "Porn star" },
-    "id": "5",
-    "categories": ["0", "2"]
+    "word": {
+      "pl": "Gwiazda porno",
+      "en": "Porn star"
+    },
+    "id": "8ede89f3-1cf6-4274-b8d1-1bb4777bb6cd",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Zabawka dla dzieci", "en": "" },
-    "id": "18",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zabawka dla dzieci",
+      "en": "Children's toy"
+    },
+    "id": "876cea85-9b3b-43ac-9b35-836ede1cc58e",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Konsola", "en": "" },
-    "id": "19",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Konsola",
+      "en": "Console"
+    },
+    "id": "515f3b8c-3eef-406f-99ff-30c769d29eee",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Energetyk", "en": "" },
-    "id": "20",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Energetyk",
+      "en": "Energy drink"
+    },
+    "id": "9ac14b6b-becf-4428-9778-64c641286fbf",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Sport olimpijski", "en": "" },
-    "id": "21",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Sport olimpijski",
+      "en": "Olympic sport"
+    },
+    "id": "f70bfc90-438c-423b-81ba-ce137b0ca379",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Sport ekstremalny", "en": "" },
-    "id": "22",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Sport ekstremalny",
+      "en": "Extreme sport"
+    },
+    "id": "6a1efd2a-f6ae-449d-b0d2-cf33f0c390c0",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Dziewczyna", "en": "" },
-    "id": "23",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Dziewczyna",
+      "en": "Girl"
+    },
+    "id": "5fe2172f-184d-44fe-96e4-03f807894f21",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Youtuber", "en": "" },
-    "id": "23",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Youtuber",
+      "en": "YouTuber"
+    },
+    "id": "43029602-0ad6-470b-9db1-45d20833a679",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Influencer", "en": "" },
-    "id": "24",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Influencer",
+      "en": "Influencer"
+    },
+    "id": "84b09048-f221-46a9-ba7e-7628eb8a61af",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Gwiazda filmowa", "en": "" },
-    "id": "25",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Gwiazda filmowa",
+      "en": "Movie start"
+    },
+    "id": "02728170-a913-472d-b6f5-f8972ba8fd00",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Serial", "en": "" },
-    "id": "26",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Serial",
+      "en": "Series"
+    },
+    "id": "17f36fc5-a564-48d5-a6a5-8e2aea6f660c",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Film", "en": "" },
-    "id": "27",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Film",
+      "en": "Movie"
+    },
+    "id": "92d29f1c-13cb-4226-b3d5-0c5924c2fee4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Marka ubrań", "en": "" },
-    "id": "28",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Marka ubrań",
+      "en": "Brand of clothes"
+    },
+    "id": "d62746f2-a23a-45aa-83d8-887e9a98f420",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Bochater Marvela", "en": "" },
-    "id": "29",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Bochater Marvela",
+      "en": "Marvel hero"
+    },
+    "id": "7f69f425-522c-4d7c-ac5b-07bd509e78fa",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Zawodnik sztuk walk", "en": "" },
-    "id": "30",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zawodnik sztuk walk",
+      "en": "Martial arts competitor"
+    },
+    "id": "a0242803-e37b-4d27-8c04-69916018e1f4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Kwiat", "en": "" },
-    "id": "31",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Kwiat",
+      "en": "Flower"
+    },
+    "id": "bc5db606-fb55-40da-811a-36c49fbcefb6",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Jezioro", "en": "" },
-    "id": "32",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Jezioro",
+      "en": "Lake"
+    },
+    "id": "f14fc6dd-8185-4116-b348-4e42c1511f2e",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Morze", "en": "" },
-    "id": "32",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Morze",
+      "en": "Sea"
+    },
+    "id": "f0339cf5-def9-4f9f-b194-6291c7b2c2e7",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Kawa", "en": "" },
-    "id": "33",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Kawa",
+      "en": "Coffe"
+    },
+    "id": "50054219-73fb-4ce8-9203-0e60fcc3a615",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Drzewo", "en": "" },
-    "id": "34",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Drzewo",
+      "en": "Tree"
+    },
+    "id": "5db005b8-6751-40cc-8b2e-5eb5fbd580ba",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Stacja paliw", "en": "" },
-    "id": "35",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Stacja paliw",
+      "en": "Petrol station"
+    },
+    "id": "fbb306db-bb75-41ee-91ce-7140ff4c6c19",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Język programowania", "en": "" },
-    "id": "36",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Język programowania",
+      "en": "Programming language"
+    },
+    "id": "6edce6b0-a14b-46eb-814c-ce5960b91947",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
   },
   {
-    "word": { "pl": "Planeta", "en": "" },
-    "id": "36",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Planeta",
+      "en": "Planet"
+    },
+    "id": "b90cf52f-ed55-4c5e-bb3e-c6fb646610a3",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
   },
   {
-    "word": { "pl": "Galaktyka", "en": "" },
-    "id": "36",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Galaktyka",
+      "en": "Galaxy"
+    },
+    "id": "dcc770eb-ef50-498d-ad83-9502b9a16be5",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1",
+      "16717e58-7333-4ec2-a7eb-769e389daad8"
+    ]
   },
   {
-    "word": { "pl": "Zawód", "en": "" },
-    "id": "37",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zawód",
+      "en": "Vacation"
+    },
+    "id": "f3f65bd3-9b90-4eaf-8830-f0d857d5b8f1",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Sklep", "en": "" },
-    "id": "38",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Sklep",
+      "en": "Shop"
+    },
+    "id": "bc8ac6d2-7757-4875-84fd-e967b4be45be",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Zawodnik F1", "en": "" },
-    "id": "39",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Zawodnik F1",
+      "en": "F1 racer"
+    },
+    "id": "1d2055d5-ac17-488b-8e96-583c0bef3903",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Piłkarz", "en": "" },
-    "id": "40",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Piłkarz",
+      "en": "Footballer"
+    },
+    "id": "f4b9faff-c44a-4b12-a045-314ce34a842a",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
   },
   {
-    "word": { "pl": "Streamer", "en": "" },
-    "id": "41",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Streamer",
+      "en": "Streamer"
+    },
+    "id": "57f8a036-c791-4e5f-80c4-08e85b82b9e4",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680",
+      "d22a40b4-0571-4441-a28c-7e932173dc6c"
+    ]
   },
   {
-    "word": { "pl": "Grecki Bóg", "en": "" },
-    "id": "42",
-    "categories": ["0", "1"]
+    "word": {
+      "pl": "Grecki Bóg",
+      "en": "Greece God"
+    },
+    "id": "b69c9737-47e4-4b44-896b-63e6c866ea06",
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "f31e4813-10b6-4b4f-8e54-1d604f34f680"
+    ]
+  },
+  {
+    "id": "9eceaf45-206d-402d-8ca2-e9a6ca86d003",
+    "word": {
+      "en": "What is the capital of Poland?",
+      "pl": "Jaka jest stolica Polski?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "d2223ce9-7f59-4b63-8304-c255fd2520f0",
+    "word": {
+      "en": "How many states are there in the United States?",
+      "pl": "Ile jest stanów w Stanach Zjednoczonych?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "9a39d066-0e7a-496f-b724-953f798e7568",
+    "word": {
+      "en": "What is the largest ocean in the world?",
+      "pl": "Jakie jest największe morze na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "f453adcf-05ec-4a9d-8633-70bc89ddc5c3",
+    "word": {
+      "en": "What is the highest mountain in the world?",
+      "pl": "Jaka jest najwyższa góra na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "e1429fe9-a7e4-4cd1-8167-03c24169e6c3",
+    "word": {
+      "en": "What is the longest river in the world?",
+      "pl": "Jaki jest najdłuższa rzeka na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "02690b41-edad-40fc-a120-fb986f5c24e7",
+    "word": {
+      "en": "What is the biggest desert in the world?",
+      "pl": "Jaki jest największy pustynia na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "d40372e4-a9ea-4483-9b53-34a94bd3ea96",
+    "word": {
+      "en": "What is the smallest country in the world?",
+      "pl": "Jaki jest najmniejszy kraj na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "1c656319-13a6-4334-a382-7d56d960d68a",
+    "word": {
+      "en": "What is the highest waterfall in the world?",
+      "pl": "Jaka jest najwyższa wodospad na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "324baf40-e7b7-47b9-92db-075caa469297",
+    "word": {
+      "en": "What is the longest bridge in the world?",
+      "pl": "Jaki jest najdłuższy most na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "9ef5e602-539c-4995-8e3c-af251597e622",
+    "word": {
+      "en": "What is the biggest lake in the world?",
+      "pl": "Jakie jest największe jezioro na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "843e6a3e-dbab-46fd-8672-157b35355c68",
+    "word": {
+      "en": "What is the longest road in the world?",
+      "pl": "Jaka jest najdłuższa droga na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "9318206d-1983-4385-836e-9691ee2bd0dd",
+    "word": {
+      "en": "What is the deepest ocean trench in the world?",
+      "pl": "Jaka jest najgłębsza wśród oceanicznych wąwozów na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "1f7f81ae-057e-45d7-bc71-c10554e63fb8",
+    "word": {
+      "en": "What is the highest volcano in the world?",
+      "pl": "Jaki jest najwyższy wulkan na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
+  },
+  {
+    "id": "41151194-9fdf-4ada-922d-2feaaecf24e2",
+    "word": {
+      "en": "What is the largest country in the world?",
+      "pl": "Jaki jest największy kraj na świecie?"
+    },
+    "categories": [
+      "3ed7aec9-3a2e-4eac-9a62-1cf5d956673f",
+      "16717e58-7333-4ec2-a7eb-769e389daad8",
+      "ce469fd4-afcf-46f3-9177-5647ae646da1"
+    ]
   }
 ]

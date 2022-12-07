@@ -60,7 +60,11 @@ function getRounds(
   }
 
   gamePlayersRounds.forEach((gamePlayersRound, index) => {
-    rounds.push({ ...gamePlayersRound, word: words[index], result: 0 })
+    rounds.push({
+      ...gamePlayersRound,
+      word: words[index - Math.floor(index / words.length) * words.length],
+      result: 0,
+    })
   })
 
   return rounds
