@@ -54,29 +54,5 @@
       "pl": "Sport"
     },
     "image": ""
-  },
-  {
-    "id": "91f52b53-1d82-4d32-aac6-4efe481e161d",
-    "name": {
-      "en": "Books and Movies",
-      "pl": "Książki i filmy"
-    },
-    "image": ""
-  },
-  {
-    "id": "c2da8aa0-698e-46e2-bdf8-26eeee6fc230",
-    "name": {
-      "en": "Famous People",
-      "pl": "Sławni ludzie"
-    },
-    "image": ""
-  },
-  {
-    "id": "df0455ba-1f41-4096-bdd8-d4da2fc5878c",
-    "name": {
-      "en": "Art and Music",
-      "pl": "Sztuka i muzyka"
-    },
-    "image": ""
   }
 ]

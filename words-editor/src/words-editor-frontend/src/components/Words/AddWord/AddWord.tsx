@@ -53,6 +53,7 @@ function AddWord() {
   return (
     <tr>
       <td></td>
+      <td></td>
       <td>
         <div>
           pl:{' '}
