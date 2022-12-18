@@ -2,7 +2,6 @@ export interface ThemeInterface {
   background: {
     default: string
   }
-
   text: {
     default: string
     darker: string

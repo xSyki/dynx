@@ -5,7 +5,6 @@ declare module 'styled-components/native' {
     background: {
       default: string
     }
-
     text: {
       default: string
       darker: string

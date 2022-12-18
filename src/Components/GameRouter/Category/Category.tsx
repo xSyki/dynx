@@ -51,6 +51,7 @@ const StyledCategory = styled.SafeAreaView`
 `
 
 const StyledButtons = styled.ScrollView`
-  flex: 1;
-  height: 100%;
+  /* flex: 1; */
+  /* gap: 20px; */
+  /* height: 100%; */
 `
